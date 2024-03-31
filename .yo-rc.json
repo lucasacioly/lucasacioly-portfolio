@@ -1,0 +1,21 @@
+{
+  "generator-jhipster": {
+    "baseName": "lucasacioly",
+    "clientFramework": "angular",
+    "clientTestFrameworks": [],
+    "clientTheme": "sandstone",
+    "clientThemeVariant": "primary",
+    "creationTimestamp": 1711848156227,
+    "devServerPort": 4200,
+    "enableTranslation": true,
+    "entities": [],
+    "jhipsterVersion": "8.2.1",
+    "languages": ["pt-br", "en", "es"],
+    "microfrontend": null,
+    "microfrontends": [],
+    "nativeLanguage": "pt-br",
+    "skipServer": true,
+    "testFrameworks": [],
+    "withAdminUi": false
+  }
+}
