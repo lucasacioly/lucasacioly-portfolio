@@ -2,6 +2,9 @@
 @import 'bootstrap/scss/functions';
 @import 'bootswatch/dist/sandstone/variables';
 @import 'bootstrap/scss/variables';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* ==============================================================
 Bootstrap tweaks
