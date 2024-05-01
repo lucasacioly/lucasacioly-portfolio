@@ -3,7 +3,6 @@ import { RouterOutlet, Router } from '@angular/router';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import dayjs from 'dayjs/esm';
 
-import { AccountService } from 'app/core/auth/account.service';
 import { AppPageTitleStrategy } from 'app/app-page-title-strategy';
 import FooterComponent from '../footer/footer.component';
 import PageRibbonComponent from '../profiles/page-ribbon.component';
@@ -20,7 +19,6 @@ export default class MainComponent implements OnInit {
 
   private router = inject(Router);
   private appPageTitleStrategy = inject(AppPageTitleStrategy);
-  private accountService = inject(AccountService);
   private translateService = inject(TranslateService);
   private rootRenderer = inject(RendererFactory2);
 
@@ -29,8 +27,6 @@ export default class MainComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // try to log in automatically
-    this.accountService.identity().subscribe();
 
     this.translateService.onLangChange.subscribe((langChangeEvent: LangChangeEvent) => {
       this.appPageTitleStrategy.updateTitle(this.router.routerState.snapshot);
