@@ -22,7 +22,7 @@ export interface Alert {
   providedIn: 'root',
 })
 export class AlertService {
-  timeout = 5000;
+  timeout = 4000;
   toast = false;
   position = 'top right';
 
