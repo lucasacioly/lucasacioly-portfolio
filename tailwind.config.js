@@ -10,6 +10,14 @@
 // }
 
 module.exports = {
+  theme: {
+    extend: {
+      gridTemplateColumns: {
+        // 23 column grid
+        '23': 'repeat(23, minmax(0, 1fr))',
+      }
+    }
+  },
   content: [
     "./src/**/*.{html,ts}",
   ],

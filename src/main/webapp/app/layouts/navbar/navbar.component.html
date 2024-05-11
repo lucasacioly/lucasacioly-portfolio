@@ -1,59 +1,29 @@
-<nav data-cy="navbar" class="navbar navbar-dark navbar-expand-md bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand logo" routerLink="/" (click)="collapseNavbar()">
-      <span class="logo-img"></span>
-      <span jhiTranslate="global.title" class="navbar-title">Lucasacioly</span>
-      <span class="navbar-version">{{ version }}</span>
-    </a>
-    <a
-      class="navbar-toggler d-lg-none"
-      href="javascript:void(0);"
-      data-toggle="collapse"
-      data-target="#navbarResponsive"
-      aria-controls="navbarResponsive"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      (click)="toggleNavbar()"
-    >
-      <fa-icon icon="bars"></fa-icon>
-    </a>
-    <div class="navbar-collapse collapse" id="navbarResponsive" [ngbCollapse]="isNavbarCollapsed()">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-          <a class="nav-link" routerLink="/" (click)="collapseNavbar()">
-            <span>
-              <fa-icon icon="home"></fa-icon>
-              <span jhiTranslate="global.menu.home">Início</span>
-            </span>
-          </a>
-        </li>
-        <!-- jhipster-needle-add-element-to-menu - JHipster will add new menu items here -->
+<header class="text-gray-600 body-font">
+  <div class="bg-shadow rounded-2xl container mx-auto flex flex-wrap m-2 p-3 flex-col md:flex-row items-center">
 
-        @if (languages && languages.length > 1) {
-          <li ngbDropdown class="nav-item dropdown pointer" display="dynamic">
-            <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="languagesnavBarDropdown">
-              <span>
-                <fa-icon icon="flag"></fa-icon>
-                <span jhiTranslate="global.menu.language">Idioma</span>
-              </span>
-            </a>
-            <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="languagesnavBarDropdown">
-              @for (language of languages; track $index) {
-                <li>
-                  <a
-                    class="dropdown-item"
-                    [jhiActiveMenu]="language"
-                    href="javascript:void(0);"
-                    (click)="changeLanguage(language); collapseNavbar()"
-                    >{{ language | findLanguageFromKey }}</a
-                  >
-                </li>
-              }
-            </ul>
-          </li>
+    <span class="logo-full-light img-fluid rounded"></span>
+
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5">C.V.</a>
+      <a jhiTranslate="global.menu.events"  class="mr-5">Eventos e Certificados</a>
+      <a jhiTranslate="global.menu.contact" (click)="navigateToContact()" class="mr-5">Contato</a>
+
+      @if (languages && languages.length > 1) {
+
+        <p-dropdown [options]="languages | findLanguageFromKey"
+                    [(ngModel)]="selectedLanguage"
+                    optionLabel="name"
+                    [showClear]="false"
+                    placeholder="Language"
+                    dropdownIcon="pi pi-language"
+                    (onChange)="selectedLanguage !== undefined ? changeLanguage(findKeyFromLanguage(selectedLanguage.name)) : true; collapseNavbar()">
+
+        </p-dropdown>
         }
 
-      </ul>
-    </div>
+    </nav>
+
   </div>
-</nav>
+
+
+</header>

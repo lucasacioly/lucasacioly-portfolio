@@ -1,19 +1,7 @@
 {
   "home": {
-    "title": "Bem vindo, Java Hipster!",
-    "subtitle": "Esta é a página principal",
-    "logged": {
-      "message": "Você está logado como \"{{username}}\"."
-    },
-    "question": "Em caso de dúvida sobre o JHipster:",
-    "link": {
-      "homepage": "Página principal JHipster",
-      "stackoverflow": "JHipster no Stack Overflow",
-      "bugtracker": "JHipster bug tracker",
-      "chat": "Sala de bate-papo pública JHipster",
-      "follow": "siga @jhipster no Twitter"
-    },
-    "like": "Se você gosta do JHipster, não se esqueça de avaliar no",
-    "github": "GitHub"
+    "title": "Olá, me chamo Lucas!",
+    "subtitle": "É um prazer conhecê-lo",
+    "affirmation":"Minha jornada na área de desenvolvimento de sistemas começou há 4 anos quando entrei no curso de Ciência da Computação. Desde então sou apaixonado por programação e desenvolvimento de software. De forma mais específica me interesso por temas como linguagens de programação, desenvolvimento de algoritmos, engenharia de software, sistemas distribuidos e inteligencia artificial. Me considero muito curioso, gosto de adquirir novas abilidades e refinar as que já possuo."
   }
 }

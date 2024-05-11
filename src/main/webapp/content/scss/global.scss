@@ -4,6 +4,40 @@
 @import 'bootstrap/scss/variables';
 
 /* ==============================================================
+Background-Container
+===============================================================*/
+
+.background-landing {
+  height: 90vh; /* Altura igual à altura da viewport */
+  width: 100%;
+  background-color: #000;
+  background-image: url('/content/images/bg/bg7.jpg');
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.3), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(11, 29, 78)), url('/content/images/bg/bg2.jpg');
+  background-size: cover; /* Ajusta o tamanho para cobrir toda a div */
+  background-position: center; /* Centraliza a imagem */
+  position: relative;
+  padding: 30px 8%;
+}
+
+
+.background-container {
+  height: 100%; /* Altura igual à altura da viewport */
+  width: 100%;
+  background: linear-gradient(rgba(11, 29, 78), rgba(255, 255, 255, 0.1));
+  background-color: #000;
+  //background-image: url('/content/images/bg/bg7.jpg');
+  //background-image: linear-gradient(rgba(0,0,0,0.6), rgba(34, 56, 116, 0.2)), url('/content/images/bg/bg7.jpg');
+  background-size: cover; /* Ajusta o tamanho para cobrir toda a div */
+  background-position: center; /* Centraliza a imagem */
+  position: relative;
+  padding: 10px 8%;
+}
+
+.bg-shadow {
+  background-color: rgba(29, 29, 29, 0.4);
+}
+
+/* ==============================================================
 Bootstrap tweaks
 ===============================================================*/
 
@@ -13,11 +47,18 @@ h2,
 h3,
 h4 {
   font-weight: 300;
+  color: #e2e2e2;
+}
+
+a{
+  color: #e2e2e2;
+  text-decoration: none;
 }
 
 a:hover {
   /* make sure browsers use the pointer cursor for anchors, even with no href */
   cursor: pointer;
+  color: #fdd87d;
 }
 
 .dropdown-item:hover {

@@ -1,0 +1,17 @@
+{
+  "contact":{
+    "title": "Contáctame",
+    "subtitle":"Siempre estoy interesado en discutir proyectos de software y oportunidades de colaboración.",
+    "form":{
+      "name":"Nombre",
+      "email":"Email",
+      "message":"Message",
+      "send":"Enviar"
+    },
+    "email":"lucasacioly.dev@gmail.com",
+    "address":"Av. Prof. Moraes Rego, 1235 - Recife",
+    "region":"Pernambuco, Brazil",
+    "linkedin":"https://www.linkedin.com/in/jos%C3%A9-lucas-acioly-7a68661a4/",
+    "github":"https://github.com/lucasacioly"
+  }
+}

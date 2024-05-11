@@ -42,11 +42,21 @@ import { PaginatorModule } from 'primeng/paginator';
 import { TabViewModule } from 'primeng/tabview';
 import { EditorModule } from 'primeng/editor';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
+import { DividerModule } from 'primeng/divider';
+import { IconFieldModule } from 'primeng/iconfield';
+import { InputIconModule } from 'primeng/inputicon';
+import { InputGroupModule } from 'primeng/inputgroup';
+import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
 
 @NgModule({
   declarations: [],
   exports: [
     CommonModule,
+    InputGroupModule,
+    InputGroupAddonModule,
+    IconFieldModule,
+    InputIconModule,
+    DividerModule,
     InputNumberModule,
     SplitButtonModule,
     SidebarModule,

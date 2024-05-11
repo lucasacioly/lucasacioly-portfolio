@@ -1,0 +1,18 @@
+{
+  "hobbies":{
+    "title": "Hobbies",
+    "music":{
+      "title":"Música",
+      "description":"Estudo música desde os 7 anos mas foi durante a época em que participei da Banda de Música do CMR que tive a real oportunidade de desenvolver habilidades instrumentais. Sou fascinado pelo meu saxofone e gosto de praticar clássicos no piano."
+    },
+    "running":{
+      "title":"Corrida",
+      "description":"A corrida é um hobby recente. Além de fonte de exercício físico, tenho a utilizado para explorar regiões que normalmente não exploro no dia a dia."
+    },
+    "games":{
+      "title":"Jogos",
+      "description":"Gosto de apreciar jogos de forma casual, sejam jogos físicos ou eletrônicos, multijogadores ou individuais desde que eu possa dar boas risadas com amigos ou aproveitar uma história envolvente.",
+      "listTitle":"Alguns títulos de que gosto são:"
+    }
+  }
+}

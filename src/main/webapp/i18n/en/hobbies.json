@@ -1,0 +1,18 @@
+{
+  "hobbies":{
+    "title": "Hobbies",
+    "music":{
+      "title":"Music",
+      "description":"I have been studying music since I was 7 years old, but it was during the time I participated in the CMR Music Band that I had the real opportunity to develop instrumental skills. I'm fascinated by my saxophone and I like to practice classics on the piano."
+    },
+    "running":{
+      "title":"Running",
+      "description":"Running is a recent hobby. In addition to being a source of physical exercise, I have used it to explore regions that I normally don't explore in my daily routine."
+    },
+    "games":{
+      "title":"Games",
+      "description":"I like to enjoy games casually, whether physical or electronic games, multiplayer or individual, as long as I can have a good laugh with friends or enjoy an engaging story.",
+      "listTitle":"These are some titles I like:"
+    }
+  }
+}

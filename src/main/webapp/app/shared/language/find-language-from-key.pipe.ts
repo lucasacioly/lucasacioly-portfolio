@@ -12,7 +12,9 @@ export default class FindLanguageFromKeyPipe implements PipeTransform {
     // jhipster-needle-i18n-language-key-pipe - JHipster will add/remove languages in this object
   };
 
-  transform(lang: string): string {
-    return this.languages[lang].name;
+  transform(listLang: string[]): { name: string }[] {
+    return listLang.map(lang => ({
+      name: this.languages[lang].name
+    }));
   }
 }

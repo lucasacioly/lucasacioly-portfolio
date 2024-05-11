@@ -1,5 +1,5 @@
-import { Component, inject, signal, OnInit, OnDestroy } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { Component, inject, signal, OnDestroy } from '@angular/core';
+import { Router, RouterModule, RouterOutlet } from '@angular/router';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
@@ -10,7 +10,7 @@ import SharedModule from 'app/shared/shared.module';
   selector: 'jhi-home',
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
-  imports: [SharedModule, RouterModule],
+  imports: [RouterOutlet, SharedModule, RouterModule],
 })
 export default class HomeComponent implements OnDestroy {
 

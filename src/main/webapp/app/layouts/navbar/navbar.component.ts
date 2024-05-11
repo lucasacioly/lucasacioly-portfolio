@@ -1,4 +1,4 @@
-import { Component, inject, signal, OnInit } from '@angular/core';
+import { Component, inject, signal, OnInit, Input, ElementRef } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -10,18 +10,23 @@ import { ProfileService } from 'app/layouts/profiles/profile.service';
 import { EntityNavbarItems } from 'app/entities/entity-navbar-items';
 import ActiveMenuDirective from './active-menu.directive';
 import NavbarItem from './navbar-item.model';
+import { PrimengModule } from 'app/shared/primeng/primeng.module';
+import { FindKeyFromLanguagePipe } from 'app/shared/language';
+import { TranslateDirective } from 'app/shared/language';
 
 @Component({
   standalone: true,
   selector: 'jhi-navbar',
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
-  imports: [RouterModule, SharedModule, ActiveMenuDirective],
+  imports: [TranslateDirective, PrimengModule, RouterModule, SharedModule, ActiveMenuDirective],
 })
 export default class NavbarComponent implements OnInit {
+
   inProduction?: boolean;
   isNavbarCollapsed = signal(true);
   languages = LANGUAGES;
+  selectedLanguage: { name: string } | undefined;
   openAPIEnabled?: boolean;
   version = '';
   entitiesNavbarItems: NavbarItem[] = [];
@@ -30,11 +35,21 @@ export default class NavbarComponent implements OnInit {
   private stateStorageService = inject(StateStorageService);
   private profileService = inject(ProfileService);
   private router = inject(Router);
+  private findKeyFromLanguagePipe: FindKeyFromLanguagePipe;
 
   constructor() {
+    this.findKeyFromLanguagePipe = new FindKeyFromLanguagePipe();
     if (VERSION) {
       this.version = VERSION.toLowerCase().startsWith('v') ? VERSION : `v${VERSION}`;
     }
+  }
+
+  navigateToContact() :void{
+    throw new Error('Method not implemented.');
+  }
+
+  findKeyFromLanguage(lang: string): string {
+    return this.findKeyFromLanguagePipe.transform(lang);
   }
 
   ngOnInit(): void {
