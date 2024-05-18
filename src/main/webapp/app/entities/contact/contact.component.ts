@@ -80,7 +80,7 @@ export class ContactComponent {
       this.messageService.add({severity:'error', summary:'Erro ao Enviar', detail:'Ocorreu um erro ao enviar o email de confirmação.'});
     }
 
-    //this.contactForm.reset();
+    this.contactForm.reset();
 
   }
 }
