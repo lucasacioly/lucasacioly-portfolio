@@ -48,7 +48,7 @@
     "@angular/platform-browser": "17.3.0",
     "@angular/platform-browser-dynamic": "17.3.0",
     "@angular/router": "17.3.0",
-
+    "@emailjs/browser": "^4.3.3",
     "@fortawesome/angular-fontawesome": "0.14.1",
     "@fortawesome/fontawesome-svg-core": "6.5.1",
     "@fortawesome/free-solid-svg-icons": "6.5.1",
@@ -80,6 +80,7 @@
     "@types/node": "20.11.25",
     "@typescript-eslint/eslint-plugin": "7.3.1",
     "@typescript-eslint/parser": "7.3.1",
+    "angular-cli-ghpages": "^2.0.0-beta.2",
     "autoprefixer": "^10.4.19",
     "browser-sync": "3.0.2",
     "browser-sync-webpack-plugin": "2.3.0",

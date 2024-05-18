@@ -99,6 +99,9 @@
             "configPath": "jest.conf.js",
             "tsConfig": "tsconfig.spec.json"
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
