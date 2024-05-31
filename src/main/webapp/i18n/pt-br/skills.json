@@ -1,8 +1,8 @@
 {
   "skills":{
-    "title": "Skills",
     "tools":{
-      "description":"Varias foram as ferramentas que já experimentei para desenvolver aplicações. Aqui está uma lista das mais comuns no meu dia a dia",
+      "title": "FERRAMENTAS",
+      "description":"Várias foram as ferramentas que já experimentei para desenvolver aplicações. Aqui está uma lista das mais comuns no meu dia a dia",
       "versioning":"Versionamento e Repositório",
       "db":"Bancos de dados",
       "messaging":"Mensageria",
@@ -11,8 +11,9 @@
       "dev":"DEV"
     },
     "languages":{
-      "desc1":"Durante o curso de Ciencia da Computação, tive a oportunidade de aprender sobre diferentes linguagens de programação/marcação e frameworks",
-      "desc2":"Deixo aqui uma lista de linguagens que utilizo com mais frequência e de forma proficional",
+      "title": "LINGUAGENS",
+      "desc1":"Tive a oportunidade de aprender sobre diferentes linguagens de programação/marcação e frameworks durante a graduação em Ciência da Computação.",
+      "desc2":"Deixo aqui uma lista de linguagens que utilizo com mais frequência e de forma profissional",
       "lang":"Linguagens",
       "frameworks":"Frameworks"
     },

@@ -1,15 +1,29 @@
-<section class="text-gray-600 body-font relative">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-12">
+<section class="body-font relative">
+  <div class="container md:px-5 py-4 md:py-12 lg:py-24 mx-auto">
+    <div class="flex flex-col text-center w-full md:mb-12">
       <h1 jhiTranslate="hobbies.title" class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Hobbies</h1>
     </div>
 
     <section class="dark:bg-gray-900">
-      <div class="gap-8 items-center py-4 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+      <div class="gap-8 items-center py-4 md:px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
 
-        <iframe height="360" class="w-full rounded-xl"
-          src="https://www.youtube.com/embed/CBymBicwyaU">
-        </iframe>
+        <div class="hidden lg:contents">
+          <iframe height="360" class="w-full rounded-xl"
+            src="https://www.youtube.com/embed/CBymBicwyaU">
+          </iframe>
+        </div>
+
+        <div class="hidden sm:contents lg:hidden">
+          <iframe height="300" class="w-full rounded-xl"
+            src="https://www.youtube.com/embed/CBymBicwyaU">
+          </iframe>
+        </div>
+
+        <div class="sm:hidden ">
+          <iframe height="200" class="w-full rounded-xl"
+            src="https://www.youtube.com/embed/CBymBicwyaU">
+          </iframe>
+        </div>
 
         <div class="mt-4 md:pl-8 md:mt-0">
           <h2 jhiTranslate="hobbies.music.title" class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
@@ -40,7 +54,7 @@
     </section>
 
     <section class="dark:bg-gray-900">
-      <div class="gap-8 items-center py-4 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+      <div class="gap-8 items-center py-4 md:px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
         <div class="mt-4 md:pr-8 md:mt-0">
           <h2 jhiTranslate="hobbies.running.title" class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             Corrida
@@ -61,7 +75,7 @@
     </section>
 
     <section class="dark:bg-gray-900">
-      <div class="gap-8 items-center py-4 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+      <div class="gap-8 items-center py-4 md:px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
         <img
           class="w-full rounded-xl"
           src="../../content/images/cards720.png"

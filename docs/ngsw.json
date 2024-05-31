@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1716049670922,
+  "timestamp": 1717121878379,
   "index": "/lucasacioly-portfolio/index.html",
   "assetGroups": [
     {
@@ -11,15 +11,15 @@
         "ignoreVary": true
       },
       "urls": [
-        "/lucasacioly-portfolio/299.57df77d6dd9592a3.js",
+        "/lucasacioly-portfolio/299.9df9de3543ba3e4c.js",
         "/lucasacioly-portfolio/441.5aabc0c3111e24bb.js",
         "/lucasacioly-portfolio/favicon.ico",
         "/lucasacioly-portfolio/index.html",
         "/lucasacioly-portfolio/main.a327022fc7e0af7a.js",
         "/lucasacioly-portfolio/manifest.webapp",
         "/lucasacioly-portfolio/polyfills.93e57830116520e2.js",
-        "/lucasacioly-portfolio/runtime.f352331d0842be50.js",
-        "/lucasacioly-portfolio/styles.f221ae58b4d9560d.css"
+        "/lucasacioly-portfolio/runtime.1b87649d19a35b58.js",
+        "/lucasacioly-portfolio/styles.128a52839853a256.css"
       ],
       "patterns": []
     },
@@ -66,7 +66,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/lucasacioly-portfolio/299.57df77d6dd9592a3.js": "cc713e35ca9fec558fcfa4f8f1503d31ec81cf1c",
+    "/lucasacioly-portfolio/299.9df9de3543ba3e4c.js": "d260bf7995ed724fa1c35088f98e01131c238deb",
     "/lucasacioly-portfolio/441.5aabc0c3111e24bb.js": "32e880380882bb9158a309d15c81ba9e692801a5",
     "/lucasacioly-portfolio/color.dae87a04d07ca92b.png": "ff4c4bcb2207891b292f544edb4da9d2df5d45cf",
     "/lucasacioly-portfolio/content/css/loading.css": "3ab1823dee0fef70192fbc9d5341dde0020a77a1",
@@ -86,24 +86,24 @@
     "/lucasacioly-portfolio/content/images/running420.png": "7c1b4f9c60fb01f0da0d9676abb4e7bd3cbd2963",
     "/lucasacioly-portfolio/content/images/running720.png": "23c1bc14b22bfa8d11b0d1d8c1668718b798b53b",
     "/lucasacioly-portfolio/content/scss/_bootstrap-variables.scss": "d406f876bd9eb5ab163006ac746b449a5f703a7c",
-    "/lucasacioly-portfolio/content/scss/global.scss": "cedc1caa65d59ec7ea238fdc256926b61d121fa4",
+    "/lucasacioly-portfolio/content/scss/global.scss": "60dc0dd09bb037d1c471a02ed994b5583b87e56d",
     "/lucasacioly-portfolio/content/scss/tailwind.scss": "d88dc6b14989074f8d407e9b7f7f855d5816203e",
-    "/lucasacioly-portfolio/content/scss/vendor.scss": "70f3150a76f23b0d4ebfad9824fb8b05fe9771a0",
+    "/lucasacioly-portfolio/content/scss/vendor.scss": "e7320325d992316fe6d7f9960933865ac21c0587",
     "/lucasacioly-portfolio/favicon.ico": "f0aa5ae2078881750146734b952960d9861b2ec7",
     "/lucasacioly-portfolio/hue.8b1818380241e6ac.png": "f81ae627637a684614aa726e206c73ce099a01fd",
-    "/lucasacioly-portfolio/index.html": "4cfa2d42facd9c5b02d43800e22084f9d0531239",
+    "/lucasacioly-portfolio/index.html": "ea866b357572c29ab77ce11b2c15ca8c7cef4122",
     "/lucasacioly-portfolio/logo_full_dark.c375acce2b5e3f8a.svg": "d37ebef9bd4cf92a4453387386a3d72a7a54bc3f",
     "/lucasacioly-portfolio/logo_full_light.f2126bfd68512156.svg": "0244a8e26ac4778ebda227530e90b775cb8f4755",
     "/lucasacioly-portfolio/main.a327022fc7e0af7a.js": "08f2f0b71766989db18d2d798c1b757e3f2d194e",
-    "/lucasacioly-portfolio/manifest.webapp": "d628705c4dceef239b02cdbbbcc5bfa14a9aff21",
+    "/lucasacioly-portfolio/manifest.webapp": "f6fe6a5847bc5a0b8eb150965786823a901693db",
     "/lucasacioly-portfolio/polyfills.93e57830116520e2.js": "d0bd6e9fbf499400c09500968aff956597f7a378",
     "/lucasacioly-portfolio/primeicons.0112589c5695a9ed.ttf": "ceeb46d594fde5cc507cdf8b70e38e78fe47653c",
     "/lucasacioly-portfolio/primeicons.943ab24c43224d29.svg": "d3332a45242b8f6edbf3f3c7176a280e7edcd961",
     "/lucasacioly-portfolio/primeicons.ba3f916dfb64be8c.woff2": "55a4b2a5f02e362405d8d874903af0b5f6a6c15d",
     "/lucasacioly-portfolio/primeicons.f8b9e8a4e401b603.woff": "b1648b50be13350fde8b5d9a6fe78354ddcc43e4",
     "/lucasacioly-portfolio/primeicons.ffecb2549ad1765a.eot": "e4df2355c405cd38aada36eda9015a810feab94c",
-    "/lucasacioly-portfolio/runtime.f352331d0842be50.js": "1f28cc3cc782da3707bd0e40fa45aad35f8f981c",
-    "/lucasacioly-portfolio/styles.f221ae58b4d9560d.css": "4a30c5b938488539f7eb4a7f2051b8472cb4d391"
+    "/lucasacioly-portfolio/runtime.1b87649d19a35b58.js": "e1a6b6b5277b9e6e1ce72f454c1aa24e5216a601",
+    "/lucasacioly-portfolio/styles.128a52839853a256.css": "9138a43237d58f9586faccd8770a39005060b917"
   },
   "navigationUrls": [
     {

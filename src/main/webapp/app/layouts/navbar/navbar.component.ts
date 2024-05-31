@@ -44,10 +44,14 @@ export default class NavbarComponent implements OnInit {
     }
   }
 
-  navigateToContact() :void{
-    throw new Error('Method not implemented.');
-  }
+  navigateToContact(): void {
+    const contactElement = document.querySelector('#contact');
 
+    if (contactElement) {
+      const yOffset = contactElement.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({ top: yOffset, behavior: 'smooth' });
+    }
+  }
   findKeyFromLanguage(lang: string): string {
     return this.findKeyFromLanguagePipe.transform(lang);
   }

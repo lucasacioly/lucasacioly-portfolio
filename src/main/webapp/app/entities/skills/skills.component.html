@@ -1,97 +1,108 @@
-<div class="container px-5 mx-auto">
+<div class="md:container lg:px-5 lg:mx-auto md:pb-12">
   <p-card styleClass="rounded-2xl">
     <section>
-      <div class="container py-4">
-        <div class="grid grid-cols-23 gap-0">
+      <div class="md:container py-4">
+        <div class="grid sm:grid-cols-1 md:grid-cols-23 gap-0">
           <div class="col-span-7">
-            <div class="h-full bg-opacity-75 px-2
-                        pt-8 pb-24 rounded-lg overflow-hidden text-center relative">
-              <h3 class="tracking-widest mb-1">
+            <div class="h-full bg-opacity-75 md:px-2 pb-10 md:pb-0
+                        rounded-lg overflow-hidden text-center relative">
+              <div class="pb-8">
+                <i [ngStyle]="{backgroundColor:'var(--primary-color)'}" class="pi pi-wrench p-3 rounded-full " style="font-size: 2rem"></i>
+              </div>
+
+              <h3 jhiTranslate="skills.tools.title" class="tracking-widest mb-1">
                 FERRAMENTAS
               </h3>
 
               <br>
 
-              <p class="leading-relaxed mb-3">
-                Varias foram as ferramentas de desenvolvimento que já experimentei. Aqui está uma lista das mais comuns no meu dia a dia
+              <p jhiTranslate="skills.tools.description" class="leading-relaxed mb-3">
+                Várias foram as ferramentas de desenvolvimento que já experimentei. Aqui está uma lista das mais comuns no meu dia a dia
               </p>
 
-              <h5 class=" sm:text-2xl my-3">Versionamento e Repositório</h5>
+              <h5 jhiTranslate="skills.tools.versioning" class=" sm:text-2xl my-3">Versionamento e Repositório</h5>
 
-              <img class="w-10 h-4" pTooltip="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-              <img class="w-10 h-4" pTooltip="Github" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
-              <img class="w-10 h-4" pTooltip="Gitlab" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" />
-
-              <br>
-              <h5 class=" sm:text-2xl my-3">Bancos de dados</h5>
-
-              <img class="w-10 h-4" pTooltip="Mongo DB" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
-              <img class="w-10 h-4" pTooltip="Elasticsearch" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/elasticsearch/elasticsearch-original.svg" />
-              <img class="w-10 h-4" pTooltip="Postgres" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
-              <img class="w-10 h-4" pTooltip="Oracle DB" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="Github" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="Gitlab" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" />
 
               <br>
-              <h5 class=" sm:text-2xl my-3">Mensageria</h5>
-              <img class="w-10 h-4" pTooltip="RabbitMQ" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg" />
+              <h5 jhiTranslate="skills.tools.db" class=" sm:text-2xl my-3">Bancos de dados</h5>
+
+              <img class="w-10 h-4 my-1" pTooltip="Mongo DB" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="Elasticsearch" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/elasticsearch/elasticsearch-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="Postgres" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="Oracle DB" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" />
 
               <br>
-              <h5 class=" sm:text-2xl my-3">Virtualização e Containers</h5>
-              <img class="w-10 h-4" pTooltip="Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg" />
+              <h5 jhiTranslate="skills.tools.messaging" class=" sm:text-2xl my-3">Mensageria</h5>
+              <img class="w-10 h-4 my-1" pTooltip="RabbitMQ" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg" />
 
               <br>
-              <h5 class=" sm:text-2xl my-3">S.O.</h5>
-
-              <img class="w-10 h-4" pTooltip="Linux" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
-              <img class="w-10 h-4" pTooltip="Windows" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg" />
+              <h5 jhiTranslate="skills.tools.vm" class=" sm:text-2xl my-3">Virtualização e Containers</h5>
+              <img class="w-10 h-4 my-1" pTooltip="Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg" />
 
               <br>
-              <h5 class=" sm:text-2xl my-3">DEV</h5>
+              <h5 jhiTranslate="skills.tools.os" class=" sm:text-2xl my-3">S.O.</h5>
 
-              <img class="w-10 h-4" pTooltip="Maven" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg" />
-              <img class="w-10 h-4" pTooltip="Nodejs" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
-              <img class="w-10 h-4" pTooltip="VS Code" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
-              <img class="w-10 h-4" pTooltip="Insomnia" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg" />
-              <img class="w-10 h-4" pTooltip="DBeaver" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dbeaver/dbeaver-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="Linux" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="Windows" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg" />
+
+              <br>
+              <h5 jhiTranslate="skills.tools.dev" class=" sm:text-2xl my-3">DEV</h5>
+
+              <img class="w-10 h-4 my-1" pTooltip="Maven" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="Nodejs" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="VS Code" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="Insomnia" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="DBeaver" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dbeaver/dbeaver-original.svg" />
 
             </div>
           </div>
 
-          <p-divider layout="vertical"  class="col-span-1"></p-divider>
+          <p-divider layout="vertical"  class="hidden md:contents md:col-span-1"></p-divider>
 
           <div class="col-span-7">
-            <div class="h-full bg-opacity-75 px-2 pt-8 pb-24 rounded-lg overflow-hidden text-center relative">
-              <h3 class="tracking-widest  mb-1">LINGUAGENS</h3>
+            <div class="h-full bg-opacity-75 md:px-2 pb-10 md:pb-0 rounded-lg overflow-hidden text-center relative">
+              <div class="pb-8">
+                <i [ngStyle]="{backgroundColor:'var(--primary-color)'}" class="pi pi-code p-3 rounded-full " style="font-size: 2rem"></i>
+              </div>
+
+              <h3 jhiTranslate="skills.languages.title" class="tracking-widest  mb-1">LINGUAGENS</h3>
 
               <br>
 
-              <p class="leading-relaxed mb-3">Tive a oportunidade de aprender sobre diferentes linguagens de programação/marcação e frameworks durante a graduação em Ciência da Computação.</p>
-              <p class="leading-relaxed mb-3">Deixo aqui uma lista de linguagens que utilizo com mais frequência e de forma proficional</p>
+              <p jhiTranslate="skills.languages.desc1" class="leading-relaxed mb-3">Tive a oportunidade de aprender sobre diferentes linguagens de programação/marcação e frameworks durante a graduação em Ciência da Computação.</p>
+              <p jhiTranslate="skills.languages.desc2" class="leading-relaxed mb-3">Deixo aqui uma lista de linguagens que utilizo com mais frequência e de forma proficional</p>
 
-              <h5 class=" sm:text-2xl my-3">Linguagens</h5>
+              <h5 jhiTranslate="skills.languages.lang" class=" sm:text-2xl my-3">Linguagens</h5>
 
-              <img class="w-10 h-4" pTooltip="Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-              <img class="w-10 h-4" pTooltip="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
-              <img class="w-10 h-4" pTooltip="Java Script" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-              <img class="w-10 h-4" pTooltip="Typescript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-              <img class="w-10 h-4" pTooltip="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-              <img class="w-10 h-4" pTooltip="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="Java Script" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="Typescript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
 
               <br>
 
-              <h5 class=" sm:text-2xl my-3">Frameworks</h5>
+              <h5 jhiTranslate="skills.languages.frameworks" class=" sm:text-2xl my-3">Frameworks</h5>
 
-              <img class="w-10 h-4" pTooltip="Spring" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
-              <img class="w-10 h-4" pTooltip="Angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-              <img class="w-10 h-4" pTooltip="Tailwind" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
-              <img class="w-10 h-4" pTooltip="Jhipster" src="../../content/images/logo-jhipster.png" />
+              <img class="w-10 h-4 my-1" pTooltip="Spring" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="Angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="Tailwind" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+              <img class="w-10 h-4 my-1" pTooltip="Jhipster" src="../../content/images/logo-jhipster.png" />
 
             </div>
           </div>
 
-          <p-divider layout="vertical" class="col-span-1"></p-divider>
+          <p-divider layout="vertical" class="hidden md:contents md:col-span-1"></p-divider>
 
           <div class="col-span-7">
-            <div class="h-full bg-opacity-75 px-2 pt-8 pb-24 rounded-lg overflow-hidden text-center relative">
+            <div class="h-full bg-opacity-75 md:px-2 rounded-lg overflow-hidden text-center relative">
+              <div class="pb-8">
+                <i [ngStyle]="{backgroundColor:'var(--primary-color)'}" class="pi pi-palette p-3 rounded-full " style="font-size: 2rem"></i>
+              </div>
               <h3 class="tracking-widest  mb-1">CRIATIVIDADE E EDIÇÃO</h3>
               <br>
               <h5 class=" sm:text-2xl mb-3">Selvage Poke Waistcoat Godard</h5>

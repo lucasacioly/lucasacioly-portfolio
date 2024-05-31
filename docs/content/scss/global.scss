@@ -6,7 +6,6 @@
 /* ==============================================================
 Background-Container
 ===============================================================*/
-
 .background-landing {
   height: 90vh; /* Altura igual à altura da viewport */
   width: 100%;
@@ -16,26 +15,104 @@ Background-Container
   background-size: cover; /* Ajusta o tamanho para cobrir toda a div */
   background-position: center; /* Centraliza a imagem */
   position: relative;
-  padding: 30px 8%;
+  padding: 5px 2%; /* Padrão para telas pequenas */
 }
 
+@media (min-width: 640px) {
+  .background-landing {
+    padding: 20px 6%; /* Para telas >= 640px (sm) */
+  }
+}
+
+@media (min-width: 768px) {
+  .background-landing {
+    padding: 30px 8%; /* Para telas >= 768px (md) */
+  }
+}
+
+@media (min-width: 1024px) {
+  .background-landing {
+    padding: 30px 10%; /* Para telas >= 1024px (lg) */
+  }
+}
+
+@media (min-width: 1280px) {
+  .background-landing {
+    padding: 30px 12%; /* Para telas >= 1280px (xl) */
+  }
+}
+
+/* Para background-container */
 
 .background-container {
   height: 100%; /* Altura igual à altura da viewport */
   width: 100%;
   background: linear-gradient(rgba(11, 29, 78), rgba(255, 255, 255, 0.1));
   background-color: #000;
-  //background-image: url('/content/images/bg/bg7.jpg');
-  //background-image: linear-gradient(rgba(0,0,0,0.6), rgba(34, 56, 116, 0.2)), url('/content/images/bg/bg7.jpg');
   background-size: cover; /* Ajusta o tamanho para cobrir toda a div */
   background-position: center; /* Centraliza a imagem */
   position: relative;
-  padding: 10px 8%;
+  padding: 10px 3%; /* Padrão para telas pequenas */
 }
 
-.bg-shadow {
-  background-color: rgba(29, 29, 29, 0.4);
+@media (min-width: 640px) {
+  .background-container {
+    padding: 10px 6%; /* Para telas >= 640px (sm) */
+  }
 }
+
+@media (min-width: 768px) {
+  .background-container {
+    padding: 10px 8%; /* Para telas >= 768px (md) */
+  }
+}
+
+@media (min-width: 1024px) {
+  .background-container {
+    padding: 10px 10%; /* Para telas >= 1024px (lg) */
+  }
+}
+
+@media (min-width: 1280px) {
+  .background-container {
+    padding: 10px 12%; /* Para telas >= 1280px (xl) */
+  }
+}
+
+.bg-shadow-nav {
+  background-color: var(--maskbg);
+}
+
+@media (max-width: 768px) {
+  .bg-shadow {
+    background-color: var(--maskbg);
+  }
+}
+
+/* ==============================================================
+Scrollbar
+===============================================================*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--surface-ground);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-700);
+}
+
 
 /* ==============================================================
 Bootstrap tweaks
@@ -58,7 +135,7 @@ a{
 a:hover {
   /* make sure browsers use the pointer cursor for anchors, even with no href */
   cursor: pointer;
-  color: #fdd87d;
+  color: var(--primary-color);
 }
 
 .dropdown-item:hover {

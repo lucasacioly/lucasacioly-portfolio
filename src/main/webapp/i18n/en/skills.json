@@ -1,18 +1,19 @@
 {
   "skills":{
-    "title": "Skills",
     "tools":{
-      "description":"I have already tried several different tools to develop applications. Here is a list of the most common ones in my daily life",
-      "versioning":"Versionamento e Repositório",
-      "db":"Data bases",
+      "title": "TOOLS",
+      "description":"I have experimented with various tools for developing applications. Here is a list of the most common ones I use in my day-to-day work.",
+      "versioning":"Versioning and Repository",
+      "db":"Databases",
       "messaging":"Messaging",
-      "vm":"Virtualização e Containers",
+      "vm":"Virtualization and Containers",
       "os":"O.S.",
       "dev":"DEV"
     },
     "languages":{
-      "desc1":"Durante o curso de Ciencia da Computação, tive a oportunidade de aprender sobre diferentes linguagens de programação/marcação e frameworks",
-      "desc2":"Deixo aqui uma lista de linguagens que utilizo com mais frequência e de forma proficional",
+      "title": "LANGUAGES",
+      "desc1":"I had the opportunity to learn about different programming/markup languages and frameworks during my Computer Science degree.",
+      "desc2":"Here is a list of the languages I use most frequently and professionally.",
       "lang":"Languages",
       "frameworks":"Frameworks"
     },

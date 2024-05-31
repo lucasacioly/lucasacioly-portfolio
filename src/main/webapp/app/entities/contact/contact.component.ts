@@ -51,6 +51,8 @@ export class ContactComponent {
     if (this.contactForm.invalid) {
       // Marca todos os campos do formulário como tocados para mostrar os erros
       this.contactForm.markAllAsTouched();
+      this.messageService.add({severity:'error', summary:'Erro', detail:'Por favor, preencha todos os campos do formulário.'});
+
       return;
     }
 
