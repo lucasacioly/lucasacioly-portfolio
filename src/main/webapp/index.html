@@ -17,7 +17,7 @@
 
     <!-- jhipster-needle-add-resources-to-root - JHipster will add new resources here -->
   </head>
-  <body>
+  <body class="loading-body">
     <!--[if lt IE 9]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve
@@ -26,17 +26,12 @@
     <![endif]-->
     <jhi-app>
       <div class="app-loading">
-        <div class="lds-pacman">
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="loader-container">
+          <div class="red-circle"></div>
+          <div class="rotator">
+            <div class="black-circle"></div>
           </div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+          <div class="text">Loading...</div>
         </div>
       </div>
       <div class="app-loading">
