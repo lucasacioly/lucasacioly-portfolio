@@ -1,0 +1,66 @@
+{
+  "cv": {
+    "about": {
+      "name": "José Lucas Acioly",
+      "job": "Engenheiro de Software",
+      "email": "Email: lucasacioly.dev@gmail.com",
+      "phone": "Telefone: +55 (81) 98536 - 6902",
+      "address": "Endereço: R. Vinte e Quatro de Agosto, 209 - Recife PE, Brasil"
+    },
+    "summary": {
+      "title": "Resumo Profissional",
+      "desc": "Minha jornada na área de desenvolvimento de sistemas começou há 4 anos, quando me matriculei no curso de Ciência da Computação. Desde então, sou apaixonado por programação e desenvolvimento de software. Mais especificamente, tenho interesse em tópicos como linguagens de programação, desenvolvimento de algoritmos, engenharia de software, sistemas distribuídos e inteligência artificial. Considero-me curioso e aventureiro, gosto de desenvolver novas habilidades e aprimorar as que já possuo."
+    },
+    "experience": {
+      "title": "Experiência Profissional",
+      "j1": {
+        "title": "Engenheiro de Software",
+        "date": "CAIXA | Nov 2024 - Data Atual",
+        "desc": {
+          "1": "",
+          "2": ""
+        }
+      },
+      "j2": {
+        "title": "Estágio em Desenvolvimento Web",
+        "date": "Tribunal de Justiça de Pernambuco (TJPE) | Abr 2023 - Out 2024",
+        "desc": {
+          "1": "Auxiliar no desenvolvimento de aplicações web para o TJPE utilizando tecnologias como Java, Spring Boot e Spring Framework para desenvolvimento backend, e Angular, Angular Material e PrimeNG para desenvolvimento frontend.",
+          "2": "Correção de bugs, geração de relatórios automáticos em Excel com Apache POI, criação de jobs em Spring Boot para manipulação/sincronização de bases de dados heterogêneas.",
+          "3": "A atividade de maior relevância foi a migração do serviço legado de consulta de jurisprudências (que utilizava Apache Lucene para indexação de documentos) para uma base de dados Elasticsearch. Esse projeto envolveu a migração do mecanismo de indexação, atualização dos serviços backend para consumir os dados indexados, e a modernização da aplicação frontend utilizada por mais de 6.000 servidores do TJPE e cidadãos que acessam os serviços públicos de consulta."
+        }
+      },
+      "j3": {
+        "title": "Estágio em Administração de Banco de Dados",
+        "date": "Nyx Soluções | Out 2022 - Mai 2023",
+        "desc": {
+          "1": "Auxiliar no gerenciamento de bases de dados Oracle para diversos clientes no Nordeste, incluindo hotéis, redes de supermercados, hospitais e outros.",
+          "2": "Gerar relatórios de atividade das bases de dados e identificar possíveis riscos ou necessidades de investimento em infraestrutura com base nesses relatórios.",
+          "3": "Auxiliei a equipe de desenvolvimento de uma empresa parceira no desenvolvimento de sua aplicação, sendo responsável principalmente pela criação de queries e procedures para uma aplicação transacional, triggers de banco e jobs em PL/SQL para sincronização de bases de dados replicadas."
+        }
+      }
+    },
+    "education": {
+      "title": "Educação",
+      "g1": {
+        "title": "Bacharelado em Ciência da Computação",
+        "date": "CIn UFPE | 2025",
+        "desc": "Durante o ciclo básico (2 anos), estudei disciplinas fundamentais, incluindo linguagens de programação, estruturas de dados e algoritmos, aprendizado de máquina, redes de computadores, bancos de dados, sistemas operacionais e infraestrutura de hardware, teoria da computação e compiladores. No ciclo profissional (2,5 anos), me especializei em tópicos avançados, como sistemas distribuídos, arquitetura de software, redes neurais e aprendizado profundo. Também adquiri expertise em data warehousing e bancos de dados orientados a assuntos, além de ser introduzido a campos emergentes, como computação quântica e inteligência artificial responsável. Além disso, tive o privilégio de atuar como monitor da disciplina de matemática discreta por dois anos, aprimorando ainda mais minhas habilidades acadêmicas e de ensino. Meu projeto de graduação é na área de mineração de processos e agrupamento de dados."
+      }
+    },
+    "skills": {
+      "title": "Habilidades",
+      "s1": "Linguagens de Programação: Python, Java, Typescript",
+      "s2": "Outras Linguagens: SQL, Bash, Powershell, HTML5, CSS3",
+      "s3": "Frameworks: Angular, Spring Boot",
+      "s4": "Middlewares: RabbitMQ, Mosquitto (MQTT)",
+      "s5": "SGBDs: MongoDB, Elasticsearch, Oracle, Postgres",
+      "s6": "Ferramentas de Cooperação: Git, GitHub, Jira, Notion, Google Suite"
+    },
+    "langs": {
+      "title": "Idiomas",
+      "l1": "Português - Língua Nativa",
+      "l2": "Inglês - Quase Fluente (Nível C2)"
+    }
+  }
+}

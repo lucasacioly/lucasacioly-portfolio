@@ -2,10 +2,10 @@
 <header class="body-font">
   <div class="bg-shadow-nav rounded-2xl container mx-auto flex flex-wrap m-2 p-3 flex-col md:flex-row items-center">
 
-    <span class="logo-full-light img-fluid rounded"></span>
+    <a class="logo-full-light img-fluid rounded" (click)="navigateToHome()"></a>
 
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5">C.V.</a>
+      <a class="mr-5" href="/cv">C.V.</a>
       <a jhiTranslate="global.menu.events"  class="mr-5">Eventos e Certificados</a>
       <a jhiTranslate="global.menu.contact" (click)="navigateToContact()" class="mr-5">Contato</a>
 

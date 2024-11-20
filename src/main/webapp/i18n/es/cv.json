@@ -1,0 +1,66 @@
+{
+  "cv": {
+    "about": {
+      "name": "José Lucas Acioly",
+      "job": "Ingeniero de Software",
+      "email": "Correo Electrónico: lucasacioly.dev@gmail.com",
+      "phone": "Teléfono: +55 (81) 98536 - 6902",
+      "address": "Dirección: R. Vinte e Quatro de Agosto, 209 - Recife PE, Brasil"
+    },
+    "summary": {
+      "title": "Resumen Profesional",
+      "desc": "Mi trayectoria en el área de desarrollo de sistemas comenzó hace 4 años, cuando me inscribí en el curso de Ciencias de la Computación. Desde entonces, soy un apasionado de la programación y el desarrollo de software. Más específicamente, tengo interés en temas como lenguajes de programación, desarrollo de algoritmos, ingeniería de software, sistemas distribuidos e inteligencia artificial. Me considero curiosamente aventurero, me gusta desarrollar nuevas habilidades y perfeccionar las que ya tengo."
+    },
+    "experience": {
+      "title": "Experiencia Profesional",
+      "j1": {
+        "title": "Ingeniero de Software",
+        "date": "CAIXA | Nov 2024 - Fecha Actual",
+        "desc": {
+          "1": "",
+          "2": ""
+        }
+      },
+      "j2": {
+        "title": "Práctica en Desarrollo Web",
+        "date": "Tribunal de Justicia de Pernambuco (TJPE) | Abr 2023 - Oct 2024",
+        "desc": {
+          "1": "Asistir en el desarrollo de aplicaciones web para el TJPE utilizando tecnologías como Java, Spring Boot y Spring Framework para desarrollo backend, y Angular, Angular Material y PrimeNG para desarrollo frontend.",
+          "2": "Corrección de errores, generación de informes automatizados en Excel con Apache POI, creación de jobs en Spring Boot para manejar/sincronizar bases de datos heterogéneas.",
+          "3": "La actividad más relevante fue la migración del servicio legado de búsqueda de jurisprudencias (que utilizaba Apache Lucene para la indexación de documentos) a una base de datos Elasticsearch. Este proyecto implicó la migración del mecanismo de indexación, la actualización de los servicios backend para consumir los datos indexados, y la modernización de la aplicación frontend utilizada por más de 6.000 funcionarios del TJPE y ciudadanos que acceden a los servicios públicos de consulta."
+        }
+      },
+      "j3": {
+        "title": "Práctica en Administración de Bases de Datos",
+        "date": "Nyx Soluciones | Oct 2022 - May 2023",
+        "desc": {
+          "1": "Asistir en la gestión de bases de datos Oracle para diversos clientes en el noreste de Brasil, incluidos hoteles, cadenas de supermercados, hospitales y otros.",
+          "2": "Generar informes de actividad de las bases de datos e identificar posibles riesgos o necesidades de inversión en infraestructura basándose en estos informes.",
+          "3": "Apoyé al equipo de desarrollo de una empresa asociada en el desarrollo de su aplicación, siendo responsable principalmente de la creación de consultas y procedimientos para una aplicación transaccional, triggers de base de datos y jobs en PL/SQL para la sincronización de bases de datos replicadas."
+        }
+      }
+    },
+    "education": {
+      "title": "Educación",
+      "g1": {
+        "title": "Licenciatura en Ciencias de la Computación",
+        "date": "CIn UFPE | 2025",
+        "desc": "Durante el ciclo básico (2 años), estudié asignaturas fundamentales, incluyendo lenguajes de programación, estructuras de datos y algoritmos, aprendizaje automático, redes de computadoras, bases de datos, sistemas operativos e infraestructura de hardware, teoría de la computación y compiladores. En el ciclo profesional (2,5 años), me especialicé en temas avanzados como sistemas distribuidos, arquitectura de software, redes neuronales y aprendizaje profundo. También adquirí experiencia en almacenamiento de datos y bases de datos orientadas a temas, además de ser introducido a campos emergentes como la computación cuántica y la inteligencia artificial responsable. Además, tuve el privilegio de actuar como asistente docente en la asignatura de matemáticas discretas durante dos años, perfeccionando aún más mis habilidades académicas y de enseñanza. Mi proyecto de graduación está en el área de minería de procesos y agrupamiento de datos."
+      }
+    },
+    "skills": {
+      "title": "Habilidades",
+      "s1": "Lenguajes de Programación: Python, Java, Typescript",
+      "s2": "Otros Lenguajes: SQL, Bash, Powershell, HTML5, CSS3",
+      "s3": "Frameworks: Angular, Spring Boot",
+      "s4": "Middlewares: RabbitMQ, Mosquitto (MQTT)",
+      "s5": "SGBDs: MongoDB, Elasticsearch, Oracle, Postgres",
+      "s6": "Herramientas de Cooperación: Git, GitHub, Jira, Notion, Google Suite"
+    },
+    "langs": {
+      "title": "Idiomas",
+      "l1": "Portugués - Idioma Nativo",
+      "l2": "Inglés - Casi Fluido (Nivel C2)"
+    }
+  }
+}

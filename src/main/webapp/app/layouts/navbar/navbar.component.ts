@@ -52,6 +52,16 @@ export default class NavbarComponent implements OnInit {
       window.scrollTo({ top: yOffset, behavior: 'smooth' });
     }
   }
+
+  navigateToCv(): void {
+    this.router.navigate(['/cv'], { replaceUrl: true });
+  }
+
+  navigateToHome(): void {
+    this.router.navigate(['/'], { replaceUrl: true });
+  }
+
+
   findKeyFromLanguage(lang: string): string {
     return this.findKeyFromLanguagePipe.transform(lang);
   }

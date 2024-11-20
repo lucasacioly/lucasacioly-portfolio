@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 
-import { Authority } from 'app/config/authority.constants';
 import { errorRoute } from './layouts/error/error.route';
 
 import HomeComponent from './home/home.component';

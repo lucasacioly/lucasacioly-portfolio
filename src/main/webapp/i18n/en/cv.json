@@ -1,0 +1,67 @@
+{
+  "cv":{
+    "about":{
+      "name": "José Lucas Acioly",
+      "job":"Software Engineer",
+      "email":"Email: lucasacioly.dev@gmail.com",
+      "phone":"Phone: +55 (81) 98536 - 6902",
+      "address":"Address: R. Vinte e Quatro de Agosto, 209 - Recife PE, Brazil"
+    },
+    "summary":{
+      "title": "Professional Summary",
+      "desc": "My journey in the area of systems development began 4 years ago when I enrolled in the Computer Science course. Since then I have been passionate about programming and software development. More specifically, I am interested in topics such as programming languages, algorithm development, software engineering, distributed systems and artificial intelligence. I consider myself adventurously curious, I like to develop new skills and refine the ones I already have."
+    },
+    "experience":{
+      "title":"Work Experience",
+      "j1": {
+        "title":"Software Engineer",
+        "date" : "CAIXA | Nov 2024 - Current Date",
+        "desc" : {
+          "1" : "",
+          "2" : ""
+        }
+      },
+      "j2": {
+        "title":"Web Development Internship",
+        "date" : "Pernambuco Justice Court (TJPE) | Apr 2023 - Oct 2024",
+        "desc" : {
+          "1" : "Assist in the development of web applications for TJPE using technologies such as Java, Spring Boot, and Spring Framework for backend development, and Angular, Angular Material, and PrimeNG for frontend development.",
+          "2" : "Bug fixing, generate automated Excel reports with Apache POI, create jobs in Spring Boot for handling/synchronizing heterogeneous databases.",
+          "3" : "The most significant activity was the migration of the legacy case law search service (which used Apache Lucene for document indexing) to an Elasticsearch database. This project involved the migration of the indexing mechanism, the backend services update to consume the indexed data, and modernizing the front-end application used by over 6,000 TJPE staff members and citizens accessing the public search services."
+        }
+      },
+      "j3": {
+        "title":"DBA Internship",
+        "date" : "Nyx Soluções | Oct 2022 - May 2023",
+        "desc" : {
+          "1" : "Assist in managing Oracle databases for various clients in Northeast Brazil , including hotels, supermarket chains, hospitals, and more.",
+          "2" : "Generated database activity reports and identifyed potential risks or infrastructure investment needs based on these reports.",
+          "3" : "I supported a partner company's development team in their application development, primarily by creating queries and procedures for a transactional application, database triggers, and PL/SQL jobs for synchronizing replicated databases."
+        }
+      }
+    },
+    "education":{
+      "title":"Education",
+      "g1": {
+        "title":"Computer Science Bsc",
+        "date" : "CIn UFPE | 2025",
+        "desc" : "During the foundational cycle (2 years), I studied core subjects including programming languages, data structures and algorithms, machine learning, computer networks, databases, operating systems and hardware infrastructure, theory of computation, and compilers. In the professional cycle (2.5 years), I specialized in advanced topics such as distributed systems, software architecture, neural networks, and deep learning. I also gained expertise in data warehousing and subject-oriented databases, while being introduced to emerging fields like quantum computing and responsible AI. Additionally, I had the privilege of serving as a teaching assistant for the discrete mathematics course for two years, further honing my academic and instructional skills. My graduation project is in the field of Process Minning and Clustering."
+      }
+    },
+    "skills":{
+      "title": "Skills",
+      "s1": "Programming Languages: Python, Java, Typescript",
+      "s2": "Ohter languages: SQL, Bash, powershell, HTML5, CSS3",
+      "s3": "Frameworks: Angular, Springboot",
+      "s4": "Midlewares: Rabbitmq, Mosquitto (mqtt)",
+      "s5": "SGBDS: mongodb, elasticsearch, Oracle, postgres",
+      "s6": "Cooperation tools: Git, github, jira, notion, google suite"
+    },
+    "langs":{
+      "title": "Languages",
+      "l1": "Portugueese - Primary Language",
+      "l2": "English - Almost Fluent (C2 Level)"
+    }
+  }
+}
+

@@ -1,10 +1,11 @@
 import { Routes } from '@angular/router';
+import { CvComponent } from './cv/cv.component';
 
 const routes: Routes = [
   {
-    //path: 'authority',
+    path: 'cv',
+    component: CvComponent,
     //data: { pageTitle: 'lucasaciolyApp.adminAuthority.home.title' },
-    //loadChildren: () => import('./admin/authority/authority.routes'),
   },
   /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
 ];
