@@ -45,11 +45,18 @@ export default class NavbarComponent implements OnInit {
   }
 
   navigateToContact(): void {
-    const contactElement = document.querySelector('#contact');
+    const isRootDir = window.location.pathname === '/';
 
-    if (contactElement) {
-      const yOffset = contactElement.getBoundingClientRect().top + window.pageYOffset;
-      window.scrollTo({ top: yOffset, behavior: 'smooth' });
+    if (isRootDir) {
+      this.scrollToContact();
+    } else {
+      // Navigate to the root directory
+      window.location.href = '/';
+
+      // Wait for the navigation to complete, then scroll to the contact section
+      window.addEventListener('load', () => {
+        this.scrollToContact();
+      });
     }
   }
 
@@ -85,5 +92,13 @@ export default class NavbarComponent implements OnInit {
 
   toggleNavbar(): void {
     this.isNavbarCollapsed.update(isNavbarCollapsed => !isNavbarCollapsed);
+  }
+
+  private scrollToContact(): void {
+    const contactElement = document.querySelector('#contact');
+    if (contactElement) {
+      const yOffset = contactElement.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({ top: yOffset, behavior: 'smooth' });
+    }
   }
 }
