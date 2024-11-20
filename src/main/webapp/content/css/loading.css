@@ -1,6 +1,5 @@
 body.loading-body {
   background-color: black;
-  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
