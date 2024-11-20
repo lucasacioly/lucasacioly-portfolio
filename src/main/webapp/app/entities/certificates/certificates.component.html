@@ -1,1 +1,41 @@
-<p>certificates works!</p>
+<div class="container mx-auto p-6">
+  <!-- Hero Section -->
+  <section class="bg-shadow-nav rounded-2xl text-center my-10 mx-64 py-1">
+    <h1 class="text-4xl font-bold">My Achievements & Contributions</h1>
+    <p class="text-lg mt-2">Explore my certificates, events, and projects.</p>
+  </section>
+
+  <!-- Certificates -->
+  <section>
+    <h2 class="text-3xl font-bold mb-4">Certificates</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-dark shadow-md p-4 rounded">
+        <h3 class="text-xl font-semibold">Certificate Title</h3>
+        <p>Issuer: [Organization]</p>
+        <p>Date: [Date]</p>
+        <a href="#" class="text-blue-500 mt-2 inline-block">View Certificate</a>
+      </div>
+      <!-- Repeat for other certificates -->
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section class="my-10">
+    <h2 class="text-3xl font-bold mb-4">Congress & Events</h2>
+    <p-timeline [value]="events" class="shadow-lg"></p-timeline>
+  </section>
+
+  <!-- Projects -->
+  <section>
+    <h2 class="text-3xl font-bold mb-4">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-dark shadow-md p-4 rounded">
+        <h3 class="text-xl font-semibold">Project Name</h3>
+        <p>Short Description of the Project</p>
+        <p class="text-gray-500">Technologies: Angular, Tailwind</p>
+        <a href="#" class="text-blue-500 mt-2 inline-block">View Project</a>
+      </div>
+      <!-- Repeat for other projects -->
+    </div>
+  </section>
+</div>
