@@ -6,21 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="favicon.ico" />
     <script>
-      (function () {
-        var baseHref = '/lucasacioly-portfolio/';
-        var path = window.location.pathname + window.location.search + window.location.hash;
-
-        // Remove baseHref from path if present
-        if (path.indexOf(baseHref) === 0) {
-          path = path.slice(baseHref.length);
-          // Ensure path starts with /
-          if (path && !path.startsWith('/')) {
-            path = '/' + path;
-          }
-        }
-
-        window.location.replace(baseHref + '?p=' + encodeURIComponent(path));
-      })();
+      // Redireciona para o index para que o Angular SPA com hash routing funcione
+      window.location.replace('/lucasacioly-portfolio/');
     </script>
     <style>
       * {

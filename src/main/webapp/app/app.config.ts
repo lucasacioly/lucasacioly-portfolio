@@ -8,6 +8,7 @@ import {
   withComponentInputBinding,
   withDebugTracing,
   withNavigationErrorHandler,
+  withHashLocation,
   NavigationError,
 } from '@angular/router';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -28,6 +29,7 @@ import { AppPageTitleStrategy } from './app-page-title-strategy';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routerFeatures: Array<RouterFeatures> = [
+  withHashLocation(),
   withComponentInputBinding(),
   withNavigationErrorHandler((e: NavigationError) => {
     const router = inject(Router);
