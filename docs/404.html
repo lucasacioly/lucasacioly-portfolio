@@ -10,8 +10,13 @@
         var baseHref = '/lucasacioly-portfolio/';
         var path = window.location.pathname + window.location.search + window.location.hash;
 
+        // Remove baseHref from path if present
         if (path.indexOf(baseHref) === 0) {
-          path = path.slice(baseHref.length - 1);
+          path = path.slice(baseHref.length);
+          // Ensure path starts with /
+          if (path && !path.startsWith('/')) {
+            path = '/' + path;
+          }
         }
 
         window.location.replace(baseHref + '?p=' + encodeURIComponent(path));
