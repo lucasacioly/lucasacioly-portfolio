@@ -11,6 +11,10 @@ Compile
 
 '''
 ng build --output-path docs --base-href /lucasacioly-portfolio/
+
+ng build --output-path docs --base-href /lucasacioly-portfolio/ --inline-fonts=false
+
+ng build --output-path docs --base-href /lucasacioly-portfolio/ --optimization=false
 '''
 
 Commit and Push to github
