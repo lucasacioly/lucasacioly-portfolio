@@ -48,7 +48,7 @@ import { InputIconModule } from 'primeng/inputicon';
 import { InputGroupModule } from 'primeng/inputgroup';
 import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
 import { TimelineModule } from 'primeng/timeline';
-
+import { TagModule } from 'primeng/tag';
 
 @NgModule({
   declarations: [],
@@ -101,6 +101,7 @@ import { TimelineModule } from 'primeng/timeline';
     EditorModule,
     OverlayPanelModule,
     TimelineModule,
+    TagModule,
   ],
 })
 export class PrimengModule {}

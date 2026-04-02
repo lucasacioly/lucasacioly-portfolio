@@ -1,41 +1,153 @@
-<div class="container mx-auto p-6">
-  <!-- Hero Section -->
-  <section class="bg-shadow-nav rounded-2xl text-center my-10 mx-64 py-1">
-    <h1 class="text-4xl font-bold">My Achievements & Contributions</h1>
-    <p class="text-lg mt-2">Explore my certificates, events, and projects.</p>
-  </section>
-
-  <!-- Certificates -->
-  <section>
-    <h2 class="text-3xl font-bold mb-4">Certificates</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="bg-dark shadow-md p-4 rounded">
-        <h3 class="text-xl font-semibold">Certificate Title</h3>
-        <p>Issuer: [Organization]</p>
-        <p>Date: [Date]</p>
-        <a href="#" class="text-blue-500 mt-2 inline-block">View Certificate</a>
+<div class="mx-auto flex min-h-full max-w-7xl flex-col gap-8 px-4 py-6 text-slate-100 sm:px-6 lg:px-8">
+  <section class="grid gap-6 rounded-3xl border border-white/10 bg-slate-950/80 p-6 shadow-2xl shadow-black/30 lg:grid-cols-[1.5fr_0.9fr] lg:p-8">
+    <div class="space-y-5">
+      <div class="space-y-3">
+        <p-tag [value]="'Galeria de certificados'" styleClass="border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm font-semibold text-emerald-200"></p-tag>
+        <h1 class="text-3xl font-semibold tracking-tight text-white sm:text-5xl">PDFs organizados e prontos para leitura</h1>
+        <p class="max-w-3xl text-sm leading-7 text-slate-300 sm:text-base">
+          Os arquivos de <strong>content/images/certs</strong> e subpastas entram em cards com metadados, ações rápidas e pré-visualização integrada.
+        </p>
       </div>
-      <!-- Repeat for other certificates -->
-    </div>
-  </section>
 
-  <!-- Events -->
-  <section class="my-10">
-    <h2 class="text-3xl font-bold mb-4">Congress & Events</h2>
-    <p-timeline [value]="events" class="shadow-lg"></p-timeline>
-  </section>
-
-  <!-- Projects -->
-  <section>
-    <h2 class="text-3xl font-bold mb-4">Projects</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="bg-dark shadow-md p-4 rounded">
-        <h3 class="text-xl font-semibold">Project Name</h3>
-        <p>Short Description of the Project</p>
-        <p class="text-gray-500">Technologies: Angular, Tailwind</p>
-        <a href="#" class="text-blue-500 mt-2 inline-block">View Project</a>
+      <div class="grid gap-3 sm:grid-cols-3">
+        <p-card styleClass="rounded-2xl border border-white/10 bg-white/5 shadow-none">
+          <span class="text-2xl font-semibold text-white">{{ certificates.length }}</span>
+          <p class="mt-1 text-sm text-slate-400">arquivos indexados</p>
+        </p-card>
+        <p-card styleClass="rounded-2xl border border-white/10 bg-white/5 shadow-none">
+          <span class="text-2xl font-semibold text-white">{{ certificateGroups.length }}</span>
+          <p class="mt-1 text-sm text-slate-400">grupos</p>
+        </p-card>
+        <p-card styleClass="rounded-2xl border border-white/10 bg-white/5 shadow-none" *ngIf="selectedCertificate as certificate">
+          <span class="text-2xl font-semibold text-white">{{ certificate.year }}</span>
+          <p class="mt-1 text-sm text-slate-400">seleção atual</p>
+        </p-card>
       </div>
-      <!-- Repeat for other projects -->
     </div>
+
+    <aside *ngIf="selectedCertificate as certificate" aria-label="Resumo do certificado selecionado" class="ml-8 flex flex-col justify-between rounded-3xl border border-cyan-300/30 !bg-slate-900 p-6 shadow-xl shadow-cyan-950/30 ring-1 ring-cyan-300/10" style="background-image: linear-gradient(135deg, rgb(8 47 73 / 0.28), rgb(15 23 42 / 0.96) 48%, rgb(2 6 23 / 1));">
+      <div class="space-y-3">
+        <span class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Selecionado</span>
+        <h2 class="text-2xl font-semibold text-white">{{ certificate.title }}</h2>
+        <p class="text-sm leading-6 text-slate-300">{{ certificate.description }}</p>
+      </div>
+
+      <dl class="mt-5 grid gap-3 text-sm sm:grid-cols-3">
+        <div>
+          <dt class="text-xs uppercase tracking-[0.16em] text-slate-500">Origem</dt>
+          <dd class="mt-1 font-medium text-slate-100">{{ certificate.issuer }}</dd>
+        </div>
+        <div>
+          <dt class="text-xs uppercase tracking-[0.16em] text-slate-500">Data</dt>
+          <dd class="mt-1 font-medium text-slate-100">{{ certificate.issueDate }}</dd>
+        </div>
+        <div>
+          <dt class="text-xs uppercase tracking-[0.16em] text-slate-500">Pasta</dt>
+          <dd class="mt-1 font-medium text-slate-100">{{ certificate.category }}</dd>
+        </div>
+      </dl>
+
+      <div class="mt-6 flex flex-wrap gap-3">
+        <button pButton type="button" icon="pi pi-eye" label="Visualizar" class="p-button-rounded" (click)="openCertificate(certificate)"></button>
+        <a pButton type="button" icon="pi pi-external-link" class="p-button-rounded p-button-outlined" [href]="certificate.pdfUrl" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+      </div>
+    </aside>
   </section>
+
+  <div class="mt-6 space-y-4">
+    <section *ngFor="let group of certificateGroups; trackBy: trackByGroup" class="rounded-3xl border border-cyan-300/15 p-5 shadow-2xl shadow-black/25 ring-1 ring-white/5 sm:p-6" style="background-color: rgb(15 23 42 / 0.88);">
+      <div class="mb-5 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Grupo</span>
+          <h2 class="mt-2 text-2xl font-semibold text-white">{{ group.label }}</h2>
+        </div>
+        <p-tag [value]="group.certificates.length + ' documentos'" styleClass="border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-200"></p-tag>
+      </div>
+
+      <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <p-card
+          *ngFor="let certificate of group.certificates; trackBy: trackByCertificate"
+          [styleClass]="'flex h-full min-h-[26rem] flex-col rounded-2xl border border-cyan-200/20 p-5 shadow-lg shadow-black/30 ring-1 ring-white/10 transition-all duration-200 hover:-translate-y-0.5 hover:border-cyan-300/35 hover:shadow-cyan-950/40 ' + cardBackgroundClass(certificate.id)"
+        >
+          <ng-template pTemplate="header">
+            <div class="mb-3 flex items-start justify-between gap-4">
+              <div class="min-w-0">
+                <span class="block text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">{{ certificate.issuer }}</span>
+                <h3 class="mt-2 min-h-[3.5rem] line-clamp-2 text-lg font-semibold leading-snug text-white">{{ certificate.title }}</h3>
+              </div>
+              <p-tag [value]="certificate.year" styleClass="border border-cyan-300/30 bg-cyan-300/15 px-2.5 py-1 text-xs font-semibold text-cyan-100"></p-tag>
+            </div>
+          </ng-template>
+
+          <p class="mt-3 min-h-[4.5rem] line-clamp-3 text-sm leading-6 text-slate-300">{{ certificate.description }}</p>
+
+          <dl class="mt-4 grid gap-3 text-sm sm:grid-cols-3 sm:[&>div]:min-w-0">
+            <div class="min-w-0">
+              <dt class="text-xs uppercase tracking-[0.16em] text-slate-500">Data</dt>
+              <dd class="mt-1 truncate font-medium text-slate-100" [attr.title]="certificate.issueDate">{{ certificate.issueDate }}</dd>
+            </div>
+            <div class="min-w-0">
+              <dt class="text-xs uppercase tracking-[0.16em] text-slate-500">Arquivo</dt>
+              <dd class="mt-1 truncate font-medium text-slate-100" [attr.title]="certificate.fileName">{{ certificate.fileName }}</dd>
+            </div>
+            <div class="min-w-0">
+              <dt class="text-xs uppercase tracking-[0.16em] text-slate-500">Grupo</dt>
+              <dd class="mt-1 truncate font-medium text-slate-100" [attr.title]="certificate.category">{{ certificate.category }}</dd>
+            </div>
+          </dl>
+
+          <ng-template pTemplate="footer">
+            <div class="mt-4 flex flex-wrap gap-3">
+              <button pButton type="button" icon="pi pi-eye" label="Visualizar" class="p-button-sm" (click)="openCertificate(certificate)"></button>
+              <a pButton type="button" icon="pi pi-download" class="p-button-sm p-button-outlined" [href]="certificate.pdfUrl" download>Baixar</a>
+            </div>
+          </ng-template>
+        </p-card>
+      </div>
+    </section>
+  </div>
+
+  <p-dialog [(visible)]="dialogVisible" [modal]="true" [dismissableMask]="true" [draggable]="false" [resizable]="false" [style]="{ width: 'min(1100px, 96vw)' }" [breakpoints]="{ '960px': '96vw' }" (onHide)="closeDialog()">
+    <ng-template pTemplate="header">
+      <div class="flex w-full items-center justify-between gap-4" *ngIf="selectedCertificate as certificate">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Pré-visualização</span>
+          <h3 class="mt-2 text-xl font-semibold text-white">{{ certificate.title }}</h3>
+        </div>
+        <span class="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-200">{{ certificate.issuer }}</span>
+      </div>
+    </ng-template>
+
+    <div *ngIf="selectedCertificate as certificate" class="grid gap-4 lg:grid-cols-[1.45fr_0.75fr]">
+      <iframe class="min-h-[72vh] w-full rounded-2xl border-0 bg-white" [src]="certificate.previewUrl" [title]="'Pré-visualização de ' + certificate.title"></iframe>
+
+      <aside aria-label="Detalhes do certificado selecionado" class="rounded-2xl border border-white/10 bg-slate-950 p-5">
+        <p class="text-sm leading-6 text-slate-300">{{ certificate.description }}</p>
+
+        <dl class="mt-5 grid gap-4 text-sm">
+          <div>
+            <dt class="text-xs uppercase tracking-[0.16em] text-slate-500">Nome do arquivo</dt>
+            <dd class="mt-1 font-medium text-slate-100">{{ certificate.fileName }}</dd>
+          </div>
+          <div>
+            <dt class="text-xs uppercase tracking-[0.16em] text-slate-500">Origem</dt>
+            <dd class="mt-1 font-medium text-slate-100">{{ certificate.issuer }}</dd>
+          </div>
+          <div>
+            <dt class="text-xs uppercase tracking-[0.16em] text-slate-500">Data</dt>
+            <dd class="mt-1 font-medium text-slate-100">{{ certificate.issueDate }}</dd>
+          </div>
+          <div>
+            <dt class="text-xs uppercase tracking-[0.16em] text-slate-500">Caminho</dt>
+            <dd class="mt-1 break-words font-medium text-slate-100">{{ certificate.filePath }}</dd>
+          </div>
+        </dl>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a pButton type="button" icon="pi pi-external-link" class="p-button-sm" [href]="certificate.pdfUrl" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <a pButton type="button" icon="pi pi-download" class="p-button-sm p-button-outlined" [href]="certificate.pdfUrl" download>Baixar</a>
+        </div>
+      </aside>
+    </div>
+  </p-dialog>
 </div>

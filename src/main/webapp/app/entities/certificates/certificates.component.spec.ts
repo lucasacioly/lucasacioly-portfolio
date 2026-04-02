@@ -6,6 +6,21 @@ describe('CertificatesComponent', () => {
   let component: CertificatesComponent;
   let fixture: ComponentFixture<CertificatesComponent>;
 
+  beforeAll(() => {
+    const mockRequire: any = require;
+
+    const mockContext = (request: string): string => {
+      if (request === './20240101-AVANADE-A3449FF1.pdf') {
+        return 'assets/20240101-AVANADE-A3449FF1.pdf';
+      }
+
+      return 'assets/mock.pdf';
+    };
+
+    mockContext.keys = () => ['./20240101-AVANADE-A3449FF1.pdf', './cmr/20191203-conclusao-CMR.pdf'];
+    mockRequire.context = jest.fn(() => mockContext);
+  });
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [CertificatesComponent]
@@ -19,5 +34,6 @@ describe('CertificatesComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+    expect(component.certificates.length).toBeGreaterThan(0);
   });
 });

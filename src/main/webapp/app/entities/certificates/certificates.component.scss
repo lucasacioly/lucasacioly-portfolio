@@ -1,0 +1,40 @@
+:host {
+	display: block;
+}
+
+@media (max-width: 1100px) {
+	.hero-panel,
+	.dialog-body {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	.certificates-page {
+		padding: 1rem;
+	}
+
+	.hero-copy,
+	.hero-preview,
+	.group-section,
+	.dialog-info {
+		padding: 1.25rem;
+		border-radius: 20px;
+	}
+
+	.hero-stats,
+	.preview-meta,
+	.card-meta,
+	.dialog-info dl {
+		grid-template-columns: 1fr;
+	}
+
+	.group-header {
+		align-items: start;
+		flex-direction: column;
+	}
+
+	.certificate-frame {
+		min-height: 60vh;
+	}
+}
