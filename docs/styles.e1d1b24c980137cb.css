@@ -6668,8 +6668,8 @@
 
     .p-button-group .p-button:focus,
     .p-button-group p-button:focus .p-button,
-    .p-buttonset .p-button:focus, 
-    .p-buttonset .p-button:focus, 
+    .p-buttonset .p-button:focus,
+    .p-buttonset .p-button:focus,
     .p-buttonset p-button:focus .p-button,
     .p-buttonset .p-button:focus{
         position: relative;
@@ -6677,8 +6677,8 @@
     }
 
     .p-button-group .p-button:not(:last-child),
-    .p-button-group .p-button:not(:last-child):hover, 
-    .p-button-group p-button:not(:last-child) .p-button, 
+    .p-button-group .p-button:not(:last-child):hover,
+    .p-button-group p-button:not(:last-child) .p-button,
     .p-button-group p-button:not(:last-child) .p-button:hover,
     .p-buttonset .p-button:not(:last-child),
     .p-buttonset .p-button:not(:last-child):hover,
@@ -6747,11 +6747,11 @@
 }
 
 .p-colorpicker-panel .p-colorpicker-color {
-    background: transparent url('color.dae87a04d07ca92b.png') no-repeat left top; 
+    background: transparent url('color.dae87a04d07ca92b.png') no-repeat left top;
 }
 
 .p-colorpicker-panel .p-colorpicker-hue {
-   background: transparent url('hue.8b1818380241e6ac.png') no-repeat left top; 
+   background: transparent url('hue.8b1818380241e6ac.png') no-repeat left top;
 }
 @layer primeng {
     .p-inputtext {
@@ -7909,7 +7909,7 @@
 .pi-refresh:before {
     content: "\e938";
 }
-  
+
 .pi-user:before {
     content: "\e939";
 }
@@ -20160,7 +20160,7 @@ Background-Container
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgb(0, 3, 34) 60%), url("/content/images/bg/bg2_fullhd.png"), linear-gradient(180deg, rgb(1, 2, 33) 0%, rgb(1, 2, 33), rgba(111, 0, 214, 0.171));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgb(0, 3, 34) 60%), url("content/images/bg/bg2_fullhd.png"), linear-gradient(180deg, rgb(1, 2, 33) 0%, rgb(1, 2, 33), rgba(111, 0, 214, 0.171));
   background-size: contain; /* Mantém as proporções da imagem */
   background-position: top center;
   background-repeat: no-repeat;
@@ -20206,7 +20206,7 @@ Background-Container
 }
 @media (max-width: 1024px) {
   .background-image {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgb(0, 3, 34) 40%, rgba(0, 0, 0, 0) 30%), url("/content/images/bg/bg2_fullhd.png"), linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(1, 2, 33) 10%, rgb(1, 2, 33), rgba(111, 0, 214, 0.171));
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgb(0, 3, 34) 40%, rgba(0, 0, 0, 0) 30%), url("content/images/bg/bg2_fullhd.png"), linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(1, 2, 33) 10%, rgb(1, 2, 33), rgba(111, 0, 214, 0.171));
     background-size: auto; /* Ensure the background image covers small screens */
     background-position: center top; /* Position image to top-center for mobile */
   }
@@ -20214,7 +20214,7 @@ Background-Container
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .background-image {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgb(0, 3, 34) 40%, rgb(1, 2, 33) 30%), url("/content/images/bg/bg2_fullhd.png"), linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(1, 2, 33) 10%, rgb(1, 2, 33), rgba(111, 0, 214, 0.171));
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgb(0, 3, 34) 40%, rgb(1, 2, 33) 30%), url("content/images/bg/bg2_fullhd.png"), linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(1, 2, 33) 10%, rgb(1, 2, 33), rgba(111, 0, 214, 0.171));
     background-size: auto; /* Ensure the background image covers small screens */
     background-position: center top; /* Position image to top-center for mobile */
   }
@@ -20464,7 +20464,7 @@ angular-cli removes postcss-rtl processed inline css, processed rules must be ad
     --tw-backdrop-invert:  ;
     --tw-backdrop-opacity:  ;
     --tw-backdrop-saturate:  ;
-    --tw-backdrop-sepia:  
+    --tw-backdrop-sepia:
 }
 ::backdrop {
     --tw-ring-inset:  ;
@@ -20483,7 +20483,7 @@ angular-cli removes postcss-rtl processed inline css, processed rules must be ad
     --tw-backdrop-invert:  ;
     --tw-backdrop-opacity:  ;
     --tw-backdrop-saturate:  ;
-    --tw-backdrop-sepia:  
+    --tw-backdrop-sepia:
 }
 .container {
     width: 100%
