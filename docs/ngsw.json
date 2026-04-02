@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1775129484406,
+  "timestamp": 1775152511507,
   "index": "/lucasacioly-portfolio/index.html",
   "assetGroups": [
     {
@@ -11,15 +11,15 @@
         "ignoreVary": true
       },
       "urls": [
-        "/lucasacioly-portfolio/156.5cf58ba577b2a9b0.js",
-        "/lucasacioly-portfolio/441.a37232fb95c019cd.js",
+        "/lucasacioly-portfolio/112.6c754bd96eb495fd.js",
+        "/lucasacioly-portfolio/300.578bfd62f4cad9c7.js",
         "/lucasacioly-portfolio/favicon.ico",
         "/lucasacioly-portfolio/index.html",
-        "/lucasacioly-portfolio/main.d39259fa42cbb2f4.js",
+        "/lucasacioly-portfolio/main.c773c139de594520.js",
         "/lucasacioly-portfolio/manifest.webapp",
-        "/lucasacioly-portfolio/polyfills.ad6ba0bc9c1480fb.js",
-        "/lucasacioly-portfolio/runtime.f49f9aaa2cef8f61.js",
-        "/lucasacioly-portfolio/styles.e1d1b24c980137cb.css"
+        "/lucasacioly-portfolio/polyfills.df011979abb4aedc.js",
+        "/lucasacioly-portfolio/runtime.4a2bde66e5891fbe.js",
+        "/lucasacioly-portfolio/styles.6cee6c826dac4efc.css"
       ],
       "patterns": []
     },
@@ -31,6 +31,7 @@
         "ignoreVary": true
       },
       "urls": [
+        "/lucasacioly-portfolio/bg2_fullhd.f1a0291dbac62b17.png",
         "/lucasacioly-portfolio/color.dae87a04d07ca92b.png",
         "/lucasacioly-portfolio/content/css/loading.css",
         "/lucasacioly-portfolio/content/images/bg/bg2.jpg",
@@ -132,8 +133,9 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/lucasacioly-portfolio/156.5cf58ba577b2a9b0.js": "44e7a9d443156bc7625a52fb41fa211396f291d6",
-    "/lucasacioly-portfolio/441.a37232fb95c019cd.js": "85aa9adc83f81971956652ffa8af72405a1624e7",
+    "/lucasacioly-portfolio/112.6c754bd96eb495fd.js": "bfbad6d2385b4cab25ffc8182b99a7fcde01e279",
+    "/lucasacioly-portfolio/300.578bfd62f4cad9c7.js": "d8eb935ad7365137256c4deacae0fbc0726bf119",
+    "/lucasacioly-portfolio/bg2_fullhd.f1a0291dbac62b17.png": "307cdba14c6e29f1680d1f9b33576b89a3a1010f",
     "/lucasacioly-portfolio/color.dae87a04d07ca92b.png": "ff4c4bcb2207891b292f544edb4da9d2df5d45cf",
     "/lucasacioly-portfolio/content/css/loading.css": "4404f312316651baaf2d63b585c515b0bce38bdc",
     "/lucasacioly-portfolio/content/images/bg/bg2.jpg": "af0a6582b2ff2882cd987b67493e87c89206510c",
@@ -218,24 +220,24 @@
     "/lucasacioly-portfolio/content/images/running420.png": "7c1b4f9c60fb01f0da0d9676abb4e7bd3cbd2963",
     "/lucasacioly-portfolio/content/images/running720.png": "23c1bc14b22bfa8d11b0d1d8c1668718b798b53b",
     "/lucasacioly-portfolio/content/scss/_bootstrap-variables.scss": "d406f876bd9eb5ab163006ac746b449a5f703a7c",
-    "/lucasacioly-portfolio/content/scss/global.scss": "827d991d281b448048b2f3e59b3382f56599a175",
+    "/lucasacioly-portfolio/content/scss/global.scss": "411c0a3d2b34f2580b84ef8e0d7a91406de8b51a",
     "/lucasacioly-portfolio/content/scss/tailwind.scss": "d88dc6b14989074f8d407e9b7f7f855d5816203e",
     "/lucasacioly-portfolio/content/scss/vendor.scss": "e7320325d992316fe6d7f9960933865ac21c0587",
     "/lucasacioly-portfolio/favicon.ico": "f0aa5ae2078881750146734b952960d9861b2ec7",
     "/lucasacioly-portfolio/hue.8b1818380241e6ac.png": "f81ae627637a684614aa726e206c73ce099a01fd",
-    "/lucasacioly-portfolio/index.html": "24e8d95c6567fac683f38e52cb54601060485a3e",
+    "/lucasacioly-portfolio/index.html": "52f0ec3bbbc50038eb3f84fdbcfc44dab8ee4726",
     "/lucasacioly-portfolio/logo_full_dark.c375acce2b5e3f8a.svg": "d37ebef9bd4cf92a4453387386a3d72a7a54bc3f",
     "/lucasacioly-portfolio/logo_full_light.f2126bfd68512156.svg": "0244a8e26ac4778ebda227530e90b775cb8f4755",
-    "/lucasacioly-portfolio/main.d39259fa42cbb2f4.js": "d69862b1bacdbe475ef76ff9e6e3d7d0f9fbbdca",
+    "/lucasacioly-portfolio/main.c773c139de594520.js": "70e4c683d5d7503003c64a64abef15646c4cc231",
     "/lucasacioly-portfolio/manifest.webapp": "f6fe6a5847bc5a0b8eb150965786823a901693db",
-    "/lucasacioly-portfolio/polyfills.ad6ba0bc9c1480fb.js": "048a55ba5a8c49dce64fe24dd4a3fdbb0e66cdf0",
+    "/lucasacioly-portfolio/polyfills.df011979abb4aedc.js": "2035161289ce5e0bda964c3e57c9ac0c727f58dd",
     "/lucasacioly-portfolio/primeicons.0112589c5695a9ed.ttf": "ceeb46d594fde5cc507cdf8b70e38e78fe47653c",
     "/lucasacioly-portfolio/primeicons.943ab24c43224d29.svg": "d3332a45242b8f6edbf3f3c7176a280e7edcd961",
     "/lucasacioly-portfolio/primeicons.ba3f916dfb64be8c.woff2": "55a4b2a5f02e362405d8d874903af0b5f6a6c15d",
     "/lucasacioly-portfolio/primeicons.f8b9e8a4e401b603.woff": "b1648b50be13350fde8b5d9a6fe78354ddcc43e4",
     "/lucasacioly-portfolio/primeicons.ffecb2549ad1765a.eot": "e4df2355c405cd38aada36eda9015a810feab94c",
-    "/lucasacioly-portfolio/runtime.f49f9aaa2cef8f61.js": "723837cd6bc01421ac45a28cbea96f4f9dd84aec",
-    "/lucasacioly-portfolio/styles.e1d1b24c980137cb.css": "2b6dc28bdcb42e7f0aac1639ea8b805be3441b03"
+    "/lucasacioly-portfolio/runtime.4a2bde66e5891fbe.js": "86c0d43e50ab5e586bb0b90a34d725f60c8c3cec",
+    "/lucasacioly-portfolio/styles.6cee6c826dac4efc.css": "7a290e2123584f9d54b486f5ac7067ad0a69fd30"
   },
   "navigationUrls": [
     {
