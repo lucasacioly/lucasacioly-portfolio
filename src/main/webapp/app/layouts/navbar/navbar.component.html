@@ -5,8 +5,8 @@
     <a class="logo-full-light img-fluid rounded" (click)="navigateToHome()"></a>
 
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5" href="/cv">C.V.</a>
-      <a jhiTranslate="global.menu.events"  href="/certs" class="mr-5">Eventos e Certificados</a>
+      <a class="mr-5" routerLink="/cv">C.V.</a>
+      <a jhiTranslate="global.menu.events" routerLink="/certs" class="mr-5">Eventos e Certificados</a>
       <a jhiTranslate="global.menu.contact" (click)="navigateToContact()" class="mr-5">Contato</a>
 
       @if (languages && languages.length > 1) {

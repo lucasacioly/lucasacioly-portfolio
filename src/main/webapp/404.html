@@ -5,6 +5,18 @@
     <title>Page Not Found</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="favicon.ico" />
+    <script>
+      (function () {
+        var baseHref = '/lucasacioly-portfolio/';
+        var path = window.location.pathname + window.location.search + window.location.hash;
+
+        if (path.indexOf(baseHref) === 0) {
+          path = path.slice(baseHref.length - 1);
+        }
+
+        window.location.replace(baseHref + '?p=' + encodeURIComponent(path));
+      })();
+    </script>
     <style>
       * {
         line-height: 1.2;
