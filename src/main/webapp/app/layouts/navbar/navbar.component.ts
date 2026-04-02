@@ -45,19 +45,17 @@ export default class NavbarComponent implements OnInit {
   }
 
   navigateToContact(): void {
-    const isRootDir = window.location.pathname === '/';
+    const isHomeRoute = this.router.url === '/' || this.router.url.startsWith('/#/') || this.router.url.startsWith('/?');
 
-    if (isRootDir) {
+    if (isHomeRoute) {
       this.scrollToContact();
-    } else {
-      // Navigate to the root directory
-      window.location.href = '/';
-
-      // Wait for the navigation to complete, then scroll to the contact section
-      window.addEventListener('load', () => {
-        this.scrollToContact();
-      });
+      return;
     }
+
+    this.router.navigate(['/'], { replaceUrl: true }).then(() => {
+      // Wait for Home view rendering before smooth scrolling.
+      requestAnimationFrame(() => this.scrollToContact());
+    });
   }
 
   navigateToCv(): void {

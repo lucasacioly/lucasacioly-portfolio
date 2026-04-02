@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="favicon.ico" />
     <script>
-      // Redireciona para o index para que o Angular SPA com hash routing funcione
-      window.location.replace('/lucasacioly-portfolio/');
+      (function () {
+        var basePath = '/lucasacioly-portfolio';
+        var pathname = window.location.pathname;
+        var routePath = pathname.indexOf(basePath) === 0 ? pathname.slice(basePath.length) : pathname;
+
+        if (!routePath || routePath === '/') {
+          routePath = '/';
+        }
+
+        var target = basePath + '/#' + routePath + window.location.search + window.location.hash;
+        window.location.replace(target);
+      })();
     </script>
     <style>
       * {
