@@ -806,7 +806,7 @@ let CvComponent = /*#__PURE__*/(() => {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "\n    ");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](26, "p", 9);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "My journey in the area of systems development began 4 years ago when\n      I enrolled in the Computer Science course. Since then I have been passionate about programming and\n      software development. More specifically, I am interested in topics such as programming languages,\n      algorithm development, software engineering, distributed systems and artificial intelligence.\n      I consider myself adventurously curious, I like to develop new skills and refine the ones I already have.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "My journey in the area of systems development began in 2021, when\n      I enrolled in the Computer Science course. Since then I have been passionate about programming and\n      software development. More specifically, I am interested in topics such as programming languages,\n      algorithm development, software engineering, distributed systems and artificial intelligence.\n      I consider myself adventurously curious, I like to develop new skills and refine the ones I already have.");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "\n  ");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();

@@ -15,7 +15,11 @@
         var redirectPath = params.get('p');
 
         if (redirectPath) {
-          history.replaceState(null, '', redirectPath + window.location.hash);
+          var baseHref = document.querySelector('base')?.getAttribute('href') || '/';
+          var normalizedBase = baseHref.endsWith('/') ? baseHref : baseHref + '/';
+          var normalizedPath = redirectPath.replace(/^\//, '');
+
+          history.replaceState(null, '', normalizedBase + normalizedPath + window.location.hash);
         }
       })();
     </script>
