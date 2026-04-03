@@ -11,7 +11,7 @@
           <div class="p-2 w-1/2">
             <div class="relative">
               <label jhiTranslate="contact.form.name" for="name" class="leading-7 text-sm text-gray-600">Name</label>
-              <input formControlName="name" type="name" id="name" pInputText class="w-full" />
+              <input formControlName="name" type="text" id="name" pInputText class="w-full" maxlength="80" autocomplete="name" />
             </div>
           </div>
           <div class="p-2 w-1/2">
@@ -29,13 +29,14 @@
                 rows="5"
                 cols="30"
                 formControlName="message"
+                maxlength="2000"
                 pInputTextarea
                 [autoResize]="true">
               </textarea>
             </div>
           </div>
           <div class="p-2 w-full">
-            <button pButton pRipple icon="pi pi-send" [label]="translate()" type="submit" class="flex mx-auto rounded-lg"></button>
+            <button pButton pRipple icon="pi pi-send" [label]="translate()" type="submit" [disabled]="isSubmitting" class="flex mx-auto rounded-lg"></button>
           </div>
           <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
             <a  href="mailto:lucasacioly.dev@gmail.com" class="text-indigo-500">lucasacioly.dev&#64;gmail.com</a>

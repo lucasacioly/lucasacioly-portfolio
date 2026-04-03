@@ -53,7 +53,6 @@
     "@angular/platform-browser": "17.3.0",
     "@angular/platform-browser-dynamic": "17.3.0",
     "@angular/router": "17.3.0",
-    "@emailjs/browser": "^4.3.3",
     "@fortawesome/angular-fontawesome": "0.14.1",
     "@fortawesome/fontawesome-svg-core": "6.5.1",
     "@fortawesome/free-solid-svg-icons": "6.5.1",
