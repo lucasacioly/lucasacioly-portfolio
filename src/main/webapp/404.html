@@ -8,12 +8,21 @@
     <script>
       (function () {
         var baseHref = '/lucasacioly-portfolio/';
-        var path = window.location.pathname + window.location.search + window.location.hash;
+        var path = window.location.pathname;
 
         if (path.indexOf(baseHref) === 0) {
-          path = path.slice(baseHref.length - 1);
+          path = path.slice(baseHref.length);
         }
 
+        // Detect certificate asset URLs and redirect to hash-based routes
+        var certsMatch = path.match(/^content\/images\/certs\/(.+)/);
+        if (certsMatch) {
+          var certPath = decodeURIComponent(certsMatch[1]);
+          window.location.replace(baseHref + '#/certs/' + certPath);
+          return;
+        }
+
+        path = path + window.location.search + window.location.hash;
         window.location.replace(baseHref + '?p=' + encodeURIComponent(path));
       })();
     </script>

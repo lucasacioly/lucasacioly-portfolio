@@ -10,7 +10,16 @@
     <meta name="theme-color" content="#000000" />
     <base href="/" />
     <script>
-      // Nenhuma redireção necessária com hash routing
+      // Redirect old asset-style URLs to hash-based routes for GitHub Pages
+      (function() {
+        var path = window.location.pathname;
+        var certsMatch = path.match(/\/content\/images\/certs\/(.+)/);
+        if (certsMatch) {
+          var basePath = window.location.pathname.replace(/^(\/[^\/]+)\/.*$/, '$1');
+          var certPath = decodeURIComponent(certsMatch[1]);
+          window.location.href = basePath + '/#/certs/' + certPath;
+        }
+      })();
     </script>
     <link rel="icon" href="favicon.ico" />
     <link rel="manifest" href="manifest.webapp" />
