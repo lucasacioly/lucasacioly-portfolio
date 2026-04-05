@@ -49,7 +49,7 @@
 
       <div class="mt-6 flex flex-wrap gap-3">
         <button pButton type="button" icon="pi pi-eye" label="Visualizar" class="p-button-rounded" (click)="openCertificate(certificate)"></button>
-        <a pButton type="button" icon="pi pi-external-link" class="p-button-rounded p-button-outlined" [href]="certificate.pdfUrl" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+        <a pButton type="button" icon="pi pi-external-link" class="p-button-rounded p-button-outlined" [href]="certificate.actualPdfUrl" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
       </div>
     </aside>
   </section>
@@ -99,7 +99,7 @@
           <ng-template pTemplate="footer">
             <div class="mt-4 flex flex-wrap gap-3">
               <button pButton type="button" icon="pi pi-eye" label="Visualizar" class="p-button-sm" (click)="openCertificate(certificate)"></button>
-              <a pButton type="button" icon="pi pi-download" class="p-button-sm p-button-outlined" [href]="certificate.pdfUrl" download>Baixar</a>
+              <a pButton type="button" icon="pi pi-download" class="p-button-sm p-button-outlined" [href]="certificate.actualPdfUrl" download>Baixar</a>
             </div>
           </ng-template>
         </p-card>
@@ -144,8 +144,8 @@
         </dl>
 
         <div class="mt-6 flex flex-wrap gap-3">
-          <a pButton type="button" icon="pi pi-external-link" class="p-button-sm" [href]="certificate.pdfUrl" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
-          <a pButton type="button" icon="pi pi-download" class="p-button-sm p-button-outlined" [href]="certificate.pdfUrl" download>Baixar</a>
+          <a pButton type="button" icon="pi pi-external-link" class="p-button-sm" [href]="certificate.actualPdfUrl" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <a pButton type="button" icon="pi pi-download" class="p-button-sm p-button-outlined" [href]="certificate.actualPdfUrl" download>Baixar</a>
         </div>
       </aside>
     </div>

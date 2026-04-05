@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { PrimengModule } from 'app/shared/primeng/primeng.module';
 import { CERTIFICATE_ASSETS } from './certificates.assets';
@@ -14,6 +15,7 @@ interface CertificateCard {
   filePath: string;
   description: string;
   pdfUrl: string;
+  actualPdfUrl: string;
   previewUrl: SafeResourceUrl;
   sortKey: string;
 }
@@ -47,12 +49,30 @@ export class CertificatesComponent implements OnInit {
   selectedCertificate?: CertificateCard;
   dialogVisible = false;
 
-  constructor(private readonly sanitizer: DomSanitizer) {}
+  constructor(
+    private readonly sanitizer: DomSanitizer,
+    private readonly route: ActivatedRoute,
+    private readonly router: Router,
+  ) {}
 
   ngOnInit(): void {
     this.certificates = this.loadCertificates();
     this.certificateGroups = this.groupCertificates(this.certificates);
     this.selectedCertificate = this.certificates[0];
+    this.handleUrlPath();
+  }
+
+  private handleUrlPath(): void {
+    const url = window.location.hash.replace('#', '');
+    const certsMatch = url.match(/\/certs\/(.+)/);
+    if (!certsMatch) {
+      return;
+    }
+    const requestedPath = certsMatch[1];
+    const found = this.certificates.find(c => c.id === requestedPath);
+    if (found) {
+      this.selectedCertificate = found;
+    }
   }
 
   openCertificate(certificate: CertificateCard): void {
@@ -119,7 +139,8 @@ export class CertificatesComponent implements OnInit {
     const category = certRelativePath.includes('/') ? certRelativePath.split('/').slice(0, -1).join('/') : 'raiz';
     const baseName = fileName.replace(/\.pdf$/i, '');
     const metadata = this.parseFileName(baseName, category);
-    const pdfUrl = `/${filePath}`;
+    const actualUrl = `/${filePath}`;
+    const pdfUrl = `#/certs/${certRelativePath}`;
 
     return {
       id: certRelativePath,
@@ -132,7 +153,8 @@ export class CertificatesComponent implements OnInit {
       filePath: certRelativePath,
       description: metadata.description,
       pdfUrl,
-      previewUrl: this.sanitizer.bypassSecurityTrustResourceUrl(pdfUrl),
+      actualPdfUrl: actualUrl,
+      previewUrl: this.sanitizer.bypassSecurityTrustResourceUrl(actualUrl),
       sortKey: metadata.sortKey,
     };
   }
