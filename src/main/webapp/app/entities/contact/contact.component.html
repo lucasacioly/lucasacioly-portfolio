@@ -1,11 +1,16 @@
 <section id="contact" class="text-gray-600 body-font relative">
-  <div class="md:container md:px-5 py-4 md:py-12 lg:py-24 mx-auto">
+  <div
+    class="md:container md:px-5 py-4 md:py-12 lg:py-24 mx-auto shadow-2xl rounded-3xl mt-12 mb-12"
+    style="background-color: rgba(1, 2, 33, 0.85)"
+  >
     <div class="flex flex-col text-center w-full mb-12">
       <h1 jhiTranslate="contact.title" #contact class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Me</h1>
-      <p jhiTranslate="contact.subtitle" class="lg:w-2/3 mx-auto leading-relaxed text-base">I'm always interested in discussing software projects and collaboration opportunities</p>
+      <p jhiTranslate="contact.subtitle" class="lg:w-2/3 mx-auto leading-relaxed text-base">
+        I'm always interested in discussing software projects and collaboration opportunities
+      </p>
     </div>
     <p-toast />
-    <form [formGroup]="contactForm"  (ngSubmit)="onSubmit()">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <div class="lg:w-1/2 md:w-2/3 mx-auto">
         <div class="flex flex-wrap -m-2">
           <div class="p-2 w-1/2">
@@ -31,17 +36,27 @@
                 formControlName="message"
                 maxlength="2000"
                 pInputTextarea
-                [autoResize]="true">
+                [autoResize]="true"
+              >
               </textarea>
             </div>
           </div>
           <div class="p-2 w-full">
-            <button pButton pRipple icon="pi pi-send" [label]="translate()" type="submit" [disabled]="isSubmitting" class="flex mx-auto rounded-lg"></button>
+            <button
+              pButton
+              pRipple
+              icon="pi pi-send"
+              [label]="translate()"
+              type="submit"
+              [disabled]="isSubmitting"
+              class="flex mx-auto rounded-lg"
+            ></button>
           </div>
           <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-            <a  href="mailto:lucasacioly.dev@gmail.com" class="text-indigo-500">lucasacioly.dev&#64;gmail.com</a>
-            <p class="leading-normal my-5">R. Vinte e Quatro de Agosto, 209 - Recife
-              <br> Pernambuco, Brazil
+            <a href="mailto:lucasacioly.dev@gmail.com" class="text-indigo-500">lucasacioly.dev&#64;gmail.com</a>
+            <p class="leading-normal my-5">
+              R. Vinte e Quatro de Agosto, 209 - Recife <br />
+              Pernambuco, Brazil
             </p>
             <span class="inline-flex space-x-4">
               <a href="https://www.linkedin.com/in/jos%C3%A9-lucas-acioly-7a68661a4/">
