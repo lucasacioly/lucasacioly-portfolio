@@ -1,0 +1,18 @@
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  jhi-cv,
+  jhi-cv * {
+    visibility: visible;
+  }
+  jhi-cv {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .print\:hidden {
+    display: none !important;
+  }
+}
