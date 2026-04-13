@@ -61,4 +61,5 @@ export const CERTIFICATE_ASSETS = [
   'content/images/certs/tech/20250614-Adatech-System-design.pdf',
   'content/images/certs/tech/20250614-CAIXAVERSO-Back-Java-LvIII.pdf',
   'content/images/certs/universidade/20230522-extencao-cin-md.pdf',
+  'content/images/certs/universidade/202650612-diploma_UFPE_CC.pdf',
 ] as const;
