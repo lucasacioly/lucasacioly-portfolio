@@ -24,6 +24,7 @@ interface CertificateGroup {
   key: string;
   label: string;
   certificates: CertificateCard[];
+  collapsed?: boolean;
 }
 
 @Component({
@@ -31,7 +32,7 @@ interface CertificateGroup {
   standalone: true,
   imports: [PrimengModule],
   templateUrl: './certificates.component.html',
-  styleUrl: './certificates.component.scss'
+  styleUrl: './certificates.component.scss',
 })
 export class CertificatesComponent implements OnInit {
   private static readonly CERTS_ROOT = 'content/images/certs/';
@@ -105,7 +106,9 @@ export class CertificatesComponent implements OnInit {
   private loadCertificates(): CertificateCard[] {
     const certificates = CERTIFICATE_ASSETS.map(assetPath => this.buildCertificateCard(assetPath));
 
-    return certificates.sort((left: CertificateCard, right: CertificateCard) => right.sortKey.localeCompare(left.sortKey) || left.title.localeCompare(right.title));
+    return certificates.sort(
+      (left: CertificateCard, right: CertificateCard) => right.sortKey.localeCompare(left.sortKey) || left.title.localeCompare(right.title),
+    );
   }
 
   private groupCertificates(certificates: CertificateCard[]): CertificateGroup[] {
@@ -124,10 +127,15 @@ export class CertificatesComponent implements OnInit {
         key: groupKey,
         label: this.formatFolderLabel(groupKey),
         certificates: [certificate],
+        collapsed: false,
       });
     });
 
     return Array.from(groups.values());
+  }
+
+  toggleGroup(group: CertificateGroup): void {
+    group.collapsed = !group.collapsed;
   }
 
   private buildCertificateCard(assetPath: string): CertificateCard {
@@ -159,7 +167,10 @@ export class CertificatesComponent implements OnInit {
     };
   }
 
-  private parseFileName(baseName: string, category: string): {
+  private parseFileName(
+    baseName: string,
+    category: string,
+  ): {
     title: string;
     issuer: string;
     issueDate: string;
@@ -246,5 +257,4 @@ export class CertificatesComponent implements OnInit {
 
     return Number.isNaN(parsedDate.getTime()) ? rawDate : parsedDate.toLocaleDateString('pt-BR');
   }
-
 }
