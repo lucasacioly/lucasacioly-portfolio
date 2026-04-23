@@ -72,7 +72,7 @@
           type="button"
           icon="pi pi-external-link"
           class="p-button-rounded p-button-outlined"
-          [href]="certificate.actualPdfUrl"
+          [href]="certificate.pdfUrl"
           target="_blank"
           rel="noopener noreferrer"
           >Abrir PDF</a
@@ -169,7 +169,7 @@
                 type="button"
                 icon="pi pi-download"
                 class="p-button-sm p-button-outlined"
-                [href]="certificate.actualPdfUrl"
+                [href]="certificate.pdfUrl"
                 download
                 >Baixar</a
               >
@@ -242,7 +242,7 @@
             rel="noopener noreferrer"
             >Abrir PDF</a
           >
-          <a pButton type="button" icon="pi pi-download" class="p-button-sm p-button-outlined" [href]="certificate.actualPdfUrl" download
+          <a pButton type="button" icon="pi pi-download" class="p-button-sm p-button-outlined" [href]="certificate.pdfUrl" download
             >Baixar</a
           >
         </div>
