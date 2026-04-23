@@ -26,6 +26,7 @@ export const CERTIFICATE_ASSETS = [
   'content/images/certs/outros/20160604-desafio-DNA.pdf',
   'content/images/certs/outros/20170121-SAGA.pdf',
   'content/images/certs/outros/20170520-desafio-DNA.pdf',
+  'content/images/certs/tech/20220118-THM-Pre-sec.pdf',
   'content/images/certs/tech/20231220-DIO-46466B26.pdf',
   'content/images/certs/tech/20231220-DIO-CD0ABF65.pdf',
   'content/images/certs/tech/20231220-DIO-D36FCE03.pdf',
@@ -61,5 +62,6 @@ export const CERTIFICATE_ASSETS = [
   'content/images/certs/tech/20250614-Adatech-System-design.pdf',
   'content/images/certs/tech/20250614-CAIXAVERSO-Back-Java-LvIII.pdf',
   'content/images/certs/universidade/20230522-extencao-cin-md.pdf',
-  'content/images/certs/universidade/20260612-diploma_UFPE_CC.pdf',
+  'content/images/certs/universidade/20250612-diploma_UFPE_CC.pdf',
+  'content/images/certs/universidade/20260414-CENES-Software-Engineering.pdf',
 ] as const;
