@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1775183538005,
+  "timestamp": 1776948409238,
   "index": "/lucasacioly-portfolio/index.html",
   "assetGroups": [
     {
@@ -11,15 +11,15 @@
         "ignoreVary": true
       },
       "urls": [
-        "/lucasacioly-portfolio/300.fce67f477c002aff.js",
-        "/lucasacioly-portfolio/840.5d43bf5e334b79a4.js",
+        "/lucasacioly-portfolio/300.55073d1c29cded17.js",
+        "/lucasacioly-portfolio/840.3b0b7ef940dd6920.js",
         "/lucasacioly-portfolio/favicon.ico",
         "/lucasacioly-portfolio/index.html",
         "/lucasacioly-portfolio/main.012d27c4d9ad3c5e.js",
         "/lucasacioly-portfolio/manifest.webapp",
         "/lucasacioly-portfolio/polyfills.df011979abb4aedc.js",
-        "/lucasacioly-portfolio/runtime.031a51e1e4546c14.js",
-        "/lucasacioly-portfolio/styles.6cee6c826dac4efc.css"
+        "/lucasacioly-portfolio/runtime.40be6a6b31ee8087.js",
+        "/lucasacioly-portfolio/styles.1dfaeb265761ff77.css"
       ],
       "patterns": []
     },
@@ -68,6 +68,8 @@
         "/lucasacioly-portfolio/content/images/certs/outros/20160604-desafio-DNA.pdf",
         "/lucasacioly-portfolio/content/images/certs/outros/20170121-SAGA.pdf",
         "/lucasacioly-portfolio/content/images/certs/outros/20170520-desafio-DNA.pdf",
+        "/lucasacioly-portfolio/content/images/certs/tech/20220118-THM-Pre-sec.pdf",
+        "/lucasacioly-portfolio/content/images/certs/tech/20220118-THM-Pre-sec.pdf:Zone.Identifier",
         "/lucasacioly-portfolio/content/images/certs/tech/20231220-DIO-46466B26.pdf",
         "/lucasacioly-portfolio/content/images/certs/tech/20231220-DIO-CD0ABF65.pdf",
         "/lucasacioly-portfolio/content/images/certs/tech/20231220-DIO-D36FCE03.pdf",
@@ -103,6 +105,9 @@
         "/lucasacioly-portfolio/content/images/certs/tech/20250614-Adatech-info-sec.pdf",
         "/lucasacioly-portfolio/content/images/certs/tech/20250614-CAIXAVERSO-Back-Java-LvIII.pdf",
         "/lucasacioly-portfolio/content/images/certs/universidade/20230522-extencao-cin-md.pdf",
+        "/lucasacioly-portfolio/content/images/certs/universidade/20250612-diploma_UFPE_CC.pdf",
+        "/lucasacioly-portfolio/content/images/certs/universidade/20260414-CENES-Software-Engineering.pdf",
+        "/lucasacioly-portfolio/content/images/certs/universidade/20260414-pos-cenes-software-engineering.pdf:Zone.Identifier",
         "/lucasacioly-portfolio/content/images/events/febrace/20190318-FEBRACE.pdf",
         "/lucasacioly-portfolio/content/images/events/febrace/20190319-FEBRACE-1.pdf",
         "/lucasacioly-portfolio/content/images/events/jornada-espacial/20181202-jornada-OBA-1.pdf",
@@ -133,8 +138,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/lucasacioly-portfolio/300.fce67f477c002aff.js": "a5e5ba0662571e6015f5ef25eee25993e525855e",
-    "/lucasacioly-portfolio/840.5d43bf5e334b79a4.js": "dc513ab31f879461b16bebae23672ef0568927f2",
+    "/lucasacioly-portfolio/300.55073d1c29cded17.js": "ff8e956b276517d415f98c28c7793e142f8dfe6b",
+    "/lucasacioly-portfolio/840.3b0b7ef940dd6920.js": "5af9dc1f604b1174bd1ec88538dcd50420da04e1",
     "/lucasacioly-portfolio/bg2_fullhd.f1a0291dbac62b17.png": "307cdba14c6e29f1680d1f9b33576b89a3a1010f",
     "/lucasacioly-portfolio/color.dae87a04d07ca92b.png": "ff4c4bcb2207891b292f544edb4da9d2df5d45cf",
     "/lucasacioly-portfolio/content/css/loading.css": "4404f312316651baaf2d63b585c515b0bce38bdc",
@@ -172,6 +177,8 @@
     "/lucasacioly-portfolio/content/images/certs/outros/20160604-desafio-DNA.pdf": "e53edcd64b7e4327eac419810ef4224634024c71",
     "/lucasacioly-portfolio/content/images/certs/outros/20170121-SAGA.pdf": "9afeff5ca4f7cc26041d16e7114eeac492897092",
     "/lucasacioly-portfolio/content/images/certs/outros/20170520-desafio-DNA.pdf": "a7367eb785b10adc0dccd0102567e008de53b9e2",
+    "/lucasacioly-portfolio/content/images/certs/tech/20220118-THM-Pre-sec.pdf": "d49f1f796868621f8d0309220144c9dd7aaf39d2",
+    "/lucasacioly-portfolio/content/images/certs/tech/20220118-THM-Pre-sec.pdf:Zone.Identifier": "c52871d17850fe44b4f8a809230dfe3107de3803",
     "/lucasacioly-portfolio/content/images/certs/tech/20231220-DIO-46466B26.pdf": "9a9f2d04ed745eeb23d86f7a0ba2c00d5d668e2d",
     "/lucasacioly-portfolio/content/images/certs/tech/20231220-DIO-CD0ABF65.pdf": "2b341fa24660c05e9b3c03027941160a71e3e40d",
     "/lucasacioly-portfolio/content/images/certs/tech/20231220-DIO-D36FCE03.pdf": "8370abe9f1c9df6e0add760c99306125af949994",
@@ -207,6 +214,9 @@
     "/lucasacioly-portfolio/content/images/certs/tech/20250614-Adatech-info-sec.pdf": "918504315ddf5257feb7161a9516eb4d91cde5d1",
     "/lucasacioly-portfolio/content/images/certs/tech/20250614-CAIXAVERSO-Back-Java-LvIII.pdf": "f8c35cc44c751115206700775a88c110024570d6",
     "/lucasacioly-portfolio/content/images/certs/universidade/20230522-extencao-cin-md.pdf": "3080ffb8835cc6fcfffee28b6e736635c59313b5",
+    "/lucasacioly-portfolio/content/images/certs/universidade/20250612-diploma_UFPE_CC.pdf": "2897443a6838cafd7277a6697f0d97f314ee5b8c",
+    "/lucasacioly-portfolio/content/images/certs/universidade/20260414-CENES-Software-Engineering.pdf": "22d3023fcc5bb51b212d351d034669588762edde",
+    "/lucasacioly-portfolio/content/images/certs/universidade/20260414-pos-cenes-software-engineering.pdf:Zone.Identifier": "c52871d17850fe44b4f8a809230dfe3107de3803",
     "/lucasacioly-portfolio/content/images/events/febrace/20190318-FEBRACE.pdf": "8b36c83a63df5c5fe79fdba6cc0118dbbe506b35",
     "/lucasacioly-portfolio/content/images/events/febrace/20190319-FEBRACE-1.pdf": "704294fa4028a0074cf0fec9ae9e374245247ec6",
     "/lucasacioly-portfolio/content/images/events/jornada-espacial/20181202-jornada-OBA-1.pdf": "449f100e6b2449b76139ab8c5f199ad6f1f63583",
@@ -220,12 +230,12 @@
     "/lucasacioly-portfolio/content/images/running420.png": "7c1b4f9c60fb01f0da0d9676abb4e7bd3cbd2963",
     "/lucasacioly-portfolio/content/images/running720.png": "23c1bc14b22bfa8d11b0d1d8c1668718b798b53b",
     "/lucasacioly-portfolio/content/scss/_bootstrap-variables.scss": "d406f876bd9eb5ab163006ac746b449a5f703a7c",
-    "/lucasacioly-portfolio/content/scss/global.scss": "411c0a3d2b34f2580b84ef8e0d7a91406de8b51a",
+    "/lucasacioly-portfolio/content/scss/global.scss": "d5657594dfc5433b320a4747e424810a6bf4e97b",
     "/lucasacioly-portfolio/content/scss/tailwind.scss": "d88dc6b14989074f8d407e9b7f7f855d5816203e",
     "/lucasacioly-portfolio/content/scss/vendor.scss": "e7320325d992316fe6d7f9960933865ac21c0587",
     "/lucasacioly-portfolio/favicon.ico": "f0aa5ae2078881750146734b952960d9861b2ec7",
     "/lucasacioly-portfolio/hue.8b1818380241e6ac.png": "f81ae627637a684614aa726e206c73ce099a01fd",
-    "/lucasacioly-portfolio/index.html": "21a50defa3b95748885ecef118ddd2816ce4c845",
+    "/lucasacioly-portfolio/index.html": "19f10f739200575585549fbc39eecd86594aa15a",
     "/lucasacioly-portfolio/logo_full_dark.c375acce2b5e3f8a.svg": "d37ebef9bd4cf92a4453387386a3d72a7a54bc3f",
     "/lucasacioly-portfolio/logo_full_light.f2126bfd68512156.svg": "0244a8e26ac4778ebda227530e90b775cb8f4755",
     "/lucasacioly-portfolio/main.012d27c4d9ad3c5e.js": "bba93c4fe505b83ec049d7898336a9b42dcada6c",
@@ -236,8 +246,8 @@
     "/lucasacioly-portfolio/primeicons.ba3f916dfb64be8c.woff2": "55a4b2a5f02e362405d8d874903af0b5f6a6c15d",
     "/lucasacioly-portfolio/primeicons.f8b9e8a4e401b603.woff": "b1648b50be13350fde8b5d9a6fe78354ddcc43e4",
     "/lucasacioly-portfolio/primeicons.ffecb2549ad1765a.eot": "e4df2355c405cd38aada36eda9015a810feab94c",
-    "/lucasacioly-portfolio/runtime.031a51e1e4546c14.js": "357a741fda5c6bb04ccd0a4eeb242b8c7c98274d",
-    "/lucasacioly-portfolio/styles.6cee6c826dac4efc.css": "7a290e2123584f9d54b486f5ac7067ad0a69fd30"
+    "/lucasacioly-portfolio/runtime.40be6a6b31ee8087.js": "162a0cc743ecce8ad66ca3598951dbfa25340fe7",
+    "/lucasacioly-portfolio/styles.1dfaeb265761ff77.css": "f508835d7e6c3d744c771591bc8fe13883c885c0"
   },
   "navigationUrls": [
     {
