@@ -18,26 +18,46 @@
         "title": "Ingeniero de Software",
         "date": "CAIXA | Nov 2024 - Fecha Actual",
         "desc": {
-          "1": "",
-          "2": ""
+          "1": "Desarrollo de sistemas críticos y de alta disponibilidad para el ecosistema financiero, enfocado en soluciones de pago instantáneo y modernización de arquitecturas.",
+          "2": "Entregas principales: Desarrollo y mantenimiento de funcionalidades para Pix Automático y Pix QR Code, garantizando rendimiento y seguridad en transacciones a gran escala.",
+          "3": "Liderazgo técnico en la refactorización de paneles administrativos, migrando arquitecturas heredadas a Spring Boot (backend) y Angular con Microfrontends (frontend).",
+          "4": "Desarrollo de APIs REST escalables utilizando Quarkus y Rest-Client, integrando sistemas distribuidos en entornos de misión crítica.",
+          "5": "Implementación de pruebas unitarias (JUnit) y de carga/rendimiento (JMeter), asegurando la resiliencia de las aplicaciones.",
+          "6": "Monitoreo continuo con Grafana y Graylog, despliegue y orquestación de contenedores con RedHat OpenShift, Docker y Azure DevOps.",
+          "7": "Stack: Java (Quarkus, Spring Boot), Microservicios, REST APIs, Angular, TypeScript, PrimeNG, Microfrontends, OpenShift, Azure DevOps, Git, Docker, Grafana, Graylog, GitHub Copilot, IntelliJ, VS Code."
         }
       },
       "j2": {
-        "title": "Práctica en Desarrollo Web",
+        "title": "Desarrollador de Software",
         "date": "Tribunal de Justicia de Pernambuco (TJPE) | Abr 2023 - Oct 2024",
         "desc": {
-          "1": "Asistir en el desarrollo de aplicaciones web para el TJPE utilizando tecnologías como Java, Spring Boot y Spring Framework para desarrollo backend, y Angular, Angular Material y PrimeNG para desarrollo frontend.",
-          "2": "Corrección de errores, generación de informes automatizados en Excel con Apache POI, creación de jobs en Spring Boot para manejar/sincronizar bases de datos heterogéneas.",
-          "3": "La actividad más relevante fue la migración del servicio legado de búsqueda de jurisprudencias (que utilizaba Apache Lucene para la indexación de documentos) a una base de datos Elasticsearch. Este proyecto implicó la migración del mecanismo de indexación, la actualización de los servicios backend para consumir los datos indexados, y la modernización de la aplicación frontend utilizada por más de 6.000 funcionarios del TJPE y ciudadanos que acceden a los servicios públicos de consulta."
+          "1": "Participación en el ciclo completo de desarrollo de aplicaciones web, enfocado en la evolución tecnológica de servicios internos y automatización de procesos de datos.",
+          "2": "Migración del servicio de búsqueda de jurisprudencias de Apache Lucene a Elasticsearch, actualizando el mecanismo de indexación y los servicios backend para mayor eficiencia.",
+          "3": "Construcción de interfaces con Angular (Material/PrimeNG) y desarrollo de APIs en Spring Boot, asegurando el mantenimiento y la creación de nuevas funcionalidades.",
+          "4": "Desarrollo de Jobs (Spring) para sincronización de bases de datos heterogéneas y generación automatizada de informes complejos en Excel con Apache POI.",
+          "5": "Identificación y corrección de errores, además de optimización de consultas en bases de datos PostgreSQL y Oracle.",
+          "6": "Stack: Java, Spring Boot, Angular, Elasticsearch, PostgreSQL, Oracle DB, Git/GitLab."
         }
       },
       "j3": {
-        "title": "Práctica en Administración de Bases de Datos",
+        "title": "Administración de Bases de Datos",
         "date": "Nyx Soluciones | Oct 2022 - May 2023",
         "desc": {
-          "1": "Asistir en la gestión de bases de datos Oracle para diversos clientes en el noreste de Brasil, incluidos hoteles, cadenas de supermercados, hospitales y otros.",
-          "2": "Generar informes de actividad de las bases de datos e identificar posibles riesgos o necesidades de inversión en infraestructura basándose en estos informes.",
-          "3": "Apoyé al equipo de desarrollo de una empresa asociada en el desarrollo de su aplicación, siendo responsable principalmente de la creación de consultas y procedimientos para una aplicación transaccional, triggers de base de datos y jobs en PL/SQL para la sincronización de bases de datos replicadas."
+          "1": "Enfoque técnico en el soporte y optimización de entornos críticos en Oracle Database para grandes clientes (hospitalario, minorista, hotelero).",
+          "2": "Responsable del análisis de informes de actividad de bases de datos, identificando cuellos de botella de rendimiento, riesgos operativos y sugiriendo mejoras de infraestructura.",
+          "3": "Elaboración de consultas complejas, procedimientos almacenados, triggers y funciones para soporte a aplicaciones de empresas asociadas.",
+          "4": "Desarrollo de Jobs en PL/SQL para automatización de tareas y sincronización de bases de datos replicadas, garantizando la integridad y disponibilidad de los datos.",
+          "5": "Consultoría técnica para equipos de desarrollo en la optimización de lógica de base de datos e integración con la aplicación.",
+          "6": "Stack: Oracle Database, PL/SQL, Oracle SQL Developer, SQL Tuning, Gestión de Bases de Datos."
+        }
+      },
+      "j4": {
+        "title": "Asistente de Matemáticas Discretas (Grado)",
+        "date": "Centro de Informática UFPE | Sep 2021 - May 2023",
+        "desc": {
+          "1": "Apoyo a estudiantes de ingeniería/ciencias de la computación en el desarrollo de la base matemática para ingeniería/ciencias de la computación.",
+          "2": "Impartición de clases de repaso sobre temas de matemáticas discretas: inducción y recursión matemática, técnicas de conteo, teoría de números, grafos y árboles.",
+          "3": "Preparación de preguntas y materiales teóricos."
         }
       }
     },
@@ -61,7 +81,9 @@
     "langs": {
       "title": "Idiomas",
       "l1": "Portugués - Idioma Nativo",
-      "l2": "Inglés - Casi Fluido (Nivel C2)"
+      "l2": "Inglés - Casi Fluido (Nivel C2)",
+      "l3": "Ruso - Básico",
+      "l4": "Español - Básico"
     }
   }
 }

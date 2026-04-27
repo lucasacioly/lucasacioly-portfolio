@@ -5,7 +5,6 @@
       "name": "José Lucas Acioly",
       "job": "Engenheiro de Software",
       "email": "Email: lucasacioly.dev@gmail.com",
-      "phone": "Telefone: +55 (81) 98536 - 6902",
       "address": "Endereço: R. Vinte e Quatro de Agosto, 209 - Recife PE, Brasil"
     },
     "summary": {
@@ -18,26 +17,46 @@
         "title": "Engenheiro de Software",
         "date": "CAIXA | Nov 2024 - Data Atual",
         "desc": {
-          "1": "",
-          "2": ""
+          "1": "Atuação no desenvolvimento de sistemas críticos e de alta disponibilidade para o ecossistema financeiro, com foco em soluções de pagamento instantâneo e modernização de arquiteturas.",
+          "2": "Principais entregas: Desenvolvimento e manutenção de funcionalidades para Pix Automático e Pix QR Code, garantindo performance e segurança em transações de larga escala.",
+          "3": "Liderança técnica no refatoramento de painéis administrativos, migrando arquiteturas legadas para Spring Boot (backend) e Angular com Microfrontends (frontend).",
+          "4": "Desenvolvimento de APIs REST escaláveis utilizando Quarkus e Rest-Client, integrando sistemas distribuídos em ambiente de missão crítica.",
+          "5": "Implementação de testes unitários (JUnit) e de carga/performance (JMeter), garantindo resiliência das aplicações.",
+          "6": "Monitoramento contínuo via Grafana e Graylog, com deploy e orquestração de containers via RedHat OpenShift, Docker e Azure DevOps.",
+          "7": "Stack: Java (Quarkus, Spring Boot), Microsserviços, REST APIs, Angular, TypeScript, PrimeNG, Microfrontends, OpenShift, Azure DevOps, Git, Docker, Grafana, Graylog, GitHub Copilot, IntelliJ, VS Code."
         }
       },
       "j2": {
-        "title": "Estágio em Desenvolvimento Web",
+        "title": "Desenvolvedor de Software",
         "date": "Tribunal de Justiça de Pernambuco (TJPE) | Abr 2023 - Out 2024",
         "desc": {
-          "1": "Auxiliar no desenvolvimento de aplicações web para o TJPE utilizando tecnologias como Java, Spring Boot e Spring Framework para desenvolvimento backend, e Angular, Angular Material e PrimeNG para desenvolvimento frontend.",
-          "2": "Correção de bugs, geração de relatórios automáticos em Excel com Apache POI, criação de jobs em Spring Boot para manipulação/sincronização de bases de dados heterogêneas.",
-          "3": "A atividade de maior relevância foi a migração do serviço legado de consulta de jurisprudências (que utilizava Apache Lucene para indexação de documentos) para uma base de dados Elasticsearch. Esse projeto envolveu a migração do mecanismo de indexação, atualização dos serviços backend para consumir os dados indexados, e a modernização da aplicação frontend utilizada por mais de 6.000 servidores do TJPE e cidadãos que acessam os serviços públicos de consulta."
+          "1": "Atuação no ciclo completo de desenvolvimento de aplicações web, focando na evolução tecnológica de serviços internos e automação de processos de dados.",
+          "2": "Migração do serviço de consulta de jurisprudências de Apache Lucene para Elasticsearch, atualizando o mecanismo de indexação e os serviços de backend para maior eficiência.",
+          "3": "Construção de interfaces com Angular (Material/PrimeNG) e desenvolvimento de APIs em Spring Boot, garantindo manutenção e criação de novas funcionalidades.",
+          "4": "Desenvolvimento de Jobs (Spring) para sincronização de bases de dados heterogêneas e geração automatizada de relatórios complexos em Excel com Apache POI.",
+          "5": "Identificação e correção de bugs, além de otimização de consultas em bancos PostgreSQL e Oracle.",
+          "6": "Stack: Java, Spring Boot, Angular, Elasticsearch, PostgreSQL, Oracle DB, Git/GitLab."
         }
       },
       "j3": {
-        "title": "Estágio em Administração de Banco de Dados",
+        "title": "Administração de Banco de Dados",
         "date": "Nyx Soluções | Out 2022 - Mai 2023",
         "desc": {
-          "1": "Auxiliar no gerenciamento de bases de dados Oracle para diversos clientes no Nordeste, incluindo hotéis, redes de supermercados, hospitais e outros.",
-          "2": "Gerar relatórios de atividade das bases de dados e identificar possíveis riscos ou necessidades de investimento em infraestrutura com base nesses relatórios.",
-          "3": "Auxiliei a equipe de desenvolvimento de uma empresa parceira no desenvolvimento de sua aplicação, sendo responsável principalmente pela criação de queries e procedures para uma aplicação transacional, triggers de banco e jobs em PL/SQL para sincronização de bases de dados replicadas."
+          "1": "Atuação técnica focada na sustentação e otimização de ambientes críticos em Oracle Database para clientes de grande porte (hospitalar, varejo, hotelaria).",
+          "2": "Responsável pela análise de relatórios de atividade das bases de dados, identificando gargalos de performance, riscos operacionais e sugerindo melhorias de infraestrutura.",
+          "3": "Elaboração de queries complexas, stored procedures, triggers e funções para suporte a aplicações de empresas parceiras.",
+          "4": "Desenvolvimento de Jobs em PL/SQL para automação de tarefas e sincronização de bases de dados replicadas, garantindo integridade e disponibilidade dos dados.",
+          "5": "Consultoria técnica para equipes de desenvolvimento na otimização de lógica de banco de dados e integração com a aplicação.",
+          "6": "Stack: Oracle Database, PL/SQL, Oracle SQL Developer, SQL Tuning, Gestão de Bases de Dados."
+        }
+      },
+      "j4": {
+        "title": "Aluno monitor de Matemática Discreta (Graduação)",
+        "date": "Centro de Informática UFPE | Set 2021 - Mai 2023",
+        "desc": {
+          "1": "Apoio a estudantes de engenharia/ciência da computação no desenvolvimento da base matemática para engenharia/ciência da computação.",
+          "2": "Ministração de aulas de revisão sobre temas de matemática discreta: indução e recursão matemática, técnicas de contagem, teoria dos números, grafos e árvores.",
+          "3": "Preparação de questões e materiais teóricos."
         }
       }
     },
@@ -61,7 +80,9 @@
     "langs": {
       "title": "Idiomas",
       "l1": "Português - Língua Nativa",
-      "l2": "Inglês - Quase Fluente (Nível C2)"
+      "l2": "Inglês - Quase Fluente (Nível C2)",
+      "l3": "Russo - Básico",
+      "l4": "Espanhol - Básico"
     }
   }
 }

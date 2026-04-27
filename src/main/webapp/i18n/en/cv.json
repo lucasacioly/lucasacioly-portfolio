@@ -16,28 +16,48 @@
       "title": "Work Experience",
       "j1": {
         "title": "Software Engineer",
-        "date": "CAIXA | Nov 2024 - Current Date",
+        "date": "CAIXA | Nov 2024 - Present",
         "desc": {
-          "1": "",
-          "2": ""
+          "1": "Development of critical and high-availability systems for the financial ecosystem, focusing on instant payment solutions and architecture modernization.",
+          "2": "Key Deliveries: Development and maintenance of features for Pix Automático and Pix QR Code, ensuring performance and security in large-scale transactions.",
+          "3": "Technical leadership in refactoring administrative panels, migrating legacy architectures to Spring Boot (backend) and Angular with Microfrontends (frontend).",
+          "4": "Development of scalable REST APIs using Quarkus and Rest-Client, integrating distributed systems in mission-critical environments.",
+          "5": "Implementation of unit tests (JUnit) and load/performance tests (JMeter), ensuring application resilience.",
+          "6": "Continuous monitoring via Grafana and Graylog, with deployment and orchestration of containers via RedHat OpenShift, Docker, and Azure DevOps.",
+          "7": "Stack: Java (Quarkus, Spring Boot), Microservices, REST APIs, Angular, TypeScript, PrimeNG, Microfrontends, OpenShift, Azure DevOps, Git, Docker, Grafana, Graylog, GitHub Copilot, IntelliJ, VS Code."
         }
       },
       "j2": {
-        "title": "Web Development Internship",
+        "title": "Software Developer",
         "date": "Pernambuco Justice Court (TJPE) | Apr 2023 - Oct 2024",
         "desc": {
-          "1": "Assist in the development of web applications for TJPE using technologies such as Java, Spring Boot, and Spring Framework for backend development, and Angular, Angular Material, and PrimeNG for frontend development.",
-          "2": "Bug fixing, generate automated Excel reports with Apache POI, create jobs in Spring Boot for handling/synchronizing heterogeneous databases.",
-          "3": "The most significant activity was the migration of the legacy case law search service (which used Apache Lucene for document indexing) to an Elasticsearch database. This project involved the migration of the indexing mechanism, the backend services update to consume the indexed data, and modernizing the front-end application used by over 6,000 TJPE staff members and citizens accessing the public search services."
+          "1": "Full-cycle development of web applications, focusing on technological evolution of internal services and data process automation.",
+          "2": "Migration of the case law search service from Apache Lucene to Elasticsearch, updating the indexing mechanism and backend services for greater efficiency.",
+          "3": "Building interfaces with Angular (Material/PrimeNG) and developing APIs in Spring Boot, ensuring maintenance and creation of new features.",
+          "4": "Development of Jobs (Spring) for synchronizing heterogeneous databases and automated generation of complex Excel reports with Apache POI.",
+          "5": "Bug identification and fixing, as well as query optimization in PostgreSQL and Oracle databases.",
+          "6": "Stack: Java, Spring Boot, Angular, Elasticsearch, PostgreSQL, Oracle DB, Git/GitLab."
         }
       },
       "j3": {
-        "title": "DBA Internship",
+        "title": "Database Administration",
         "date": "Nyx Soluções | Oct 2022 - May 2023",
         "desc": {
-          "1": "Assist in managing Oracle databases for various clients in Northeast Brazil , including hotels, supermarket chains, hospitals, and more.",
-          "2": "Generated database activity reports and identifyed potential risks or infrastructure investment needs based on these reports.",
-          "3": "I supported a partner company's development team in their application development, primarily by creating queries and procedures for a transactional application, database triggers, and PL/SQL jobs for synchronizing replicated databases."
+          "1": "Technical focus on supporting and optimizing critical Oracle Database environments for large clients (healthcare, retail, hospitality).",
+          "2": "Responsible for analyzing database activity reports, identifying performance bottlenecks, operational risks, and suggesting infrastructure improvements.",
+          "3": "Development of complex queries, stored procedures, triggers, and functions to support partner company applications.",
+          "4": "Development of PL/SQL Jobs for task automation and synchronization of replicated databases, ensuring data integrity and availability.",
+          "5": "Technical consulting for development teams in optimizing database logic and application integration.",
+          "6": "Stack: Oracle Database, PL/SQL, Oracle SQL Developer, SQL Tuning, Database Management."
+        }
+      },
+      "j4": {
+        "title": "Discrete Mathematics Teaching Assistant (Undergraduate)",
+        "date": "Centro de Informática UFPE | Sep 2021 - May 2023",
+        "desc": {
+          "1": "Supporting engineering/computer science students in developing the mathematical foundation for engineering/computer science.",
+          "2": "Teaching review classes on discrete mathematics topics: mathematical induction and recursion, counting techniques, number theory, graphs, and trees.",
+          "3": "Preparation of questions and theoretical materials."
         }
       }
     },
@@ -60,8 +80,10 @@
     },
     "langs": {
       "title": "Languages",
-      "l1": "Portugueese - Primary Language",
-      "l2": "English - Almost Fluent (C2 Level)"
+      "l1": "Portuguese - Native Language",
+      "l2": "English - Almost Fluent (C2 Level)",
+      "l3": "Russian - Basic",
+      "l4": "Spanish - Basic"
     }
   }
 }
